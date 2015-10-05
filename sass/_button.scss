@@ -1,0 +1,12 @@
+@media screen, projection {
+
+.button {
+    font-size: $size-4;
+    padding: $eighth-line $quarter-line;
+    font-family: $secondary-font;
+    background-color: $link;
+    color: $light;
+    cursor: pointer;
+}
+
+}

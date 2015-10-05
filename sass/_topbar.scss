@@ -1,0 +1,22 @@
+@media screen, projection {
+
+.topbar {
+    padding: $single-line 0;
+    background-color: $lgrey;
+}
+
+.topbar a {
+    color: $dark;
+}
+
+.topbar a:hover,
+.topbar a:active,
+.topbar a:focus {
+    text-decoration: underline;
+}
+
+.topbar-purple {
+    border-bottom: $quarter-line solid $corporate;
+}
+
+}

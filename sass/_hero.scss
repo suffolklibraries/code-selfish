@@ -1,0 +1,26 @@
+@media screen, projection {
+
+.hero-splash {
+    position: relative;
+    margin-bottom: $single-line;
+}
+
+.hero-splash-home img {
+    border-bottom: $quarter-line solid $corporate;
+}
+
+.hero-splash-text {
+    position: absolute;
+    bottom: $half-line;
+    left: 0;
+}
+
+.hero-splash-text p {
+    padding: $eighth-line $half-line;
+    font-size: $size-3;
+    background-color: $dark;
+    opacity: 0.9;
+    color: $light;
+}
+
+}

@@ -1,0 +1,13 @@
+@media screen, projection {
+
+.form {
+    line-height: 1em;
+}
+
+.form input {
+    font-size: $size-4;
+    padding: $eighth-line;
+    font-family: $secondary-font;
+}
+
+}

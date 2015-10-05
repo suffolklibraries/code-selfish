@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+// Variables
+
+// Fonts
+$main-font: 'Source Sans Pro', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+
+// Breakpoints
+$bp: "screen and (min-width: 760px)";
+$nbp: "screen and (min-width: 1024px)";
+
+// Line heights, widths and margins
+$base-line-height: 1.4;
+$single-line: 1.4em;
+$line-and-a-half: ($single-line * 1.5);
+$double-line: ($single-line * 2);
+$treble-line: ($single-line * 3);
+$quadruple-line: ($single-line * 4);
+$half-line: ($single-line / 2);
+$quarter-line: ($single-line / 4);
+$eighth-line: ($single-line / 8);
+$base-font-size: 106.75%;
+$widescreen-font-size: 106.75%;
+$max-width: 1600px;
+$wrapper-width: 75%;
+
+// Type scale (see http://type-scale.com/ minor third)
+$size-1: 0.579em;
+$size-2: 0.694em;
+$size-3: 0.833em;
+$size-4: 1em;
+$size-5: 1.2em;
+$size-6: 1.44em;
+$size-7: 1.728em;
+$size-8: 2.074em;
+
+// Colours
+$black: #000;
+$dark: #333;
+$light: #FFF;
+$highlight: #265A8E;
+$grey: #AAA;
+$lgrey: #F1F1F1;
+$midgrey: #DFDFDF;
+$link: #0282F9;
+$visited: #46A4FC;
+$active: #000;
+$hover: #02CAF7;
+$code: #FCDF02;
+$background: #F7F7F7;
+$corporate: #642D91;
+
+
+// Import partials
+@import
+"sass/base",
+"sass/entry",
+"sass/search",
+"sass/nav",
+"sass/utils",
+"sass/topbar",
+"sass/grid",
+"sass/layout",
+"sass/hero",
+"sass/vbox",
+"sass/iconography",
+"sass/form",
+"sass/button"
+;

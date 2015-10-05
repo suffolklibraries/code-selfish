@@ -1,0 +1,41 @@
+@media screen, projection {
+
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, fieldset, dd, figure, figcaption, main { margin: 0; padding: 0; }
+article, aside, dialog, figure, figcaption, footer, header, hgroup, nav, section, main { display: block; }
+
+html {
+    background-color: $lgrey;
+    color: $dark;
+}
+
+body {
+    font-family: $main-font;
+    line-height: $base-line-height;
+    max-width: $max-width;
+    margin: 0 auto;
+    background-color: $light;
+    font-size: $base-font-size;
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+}
+
+a:link {
+    color: $link;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: $hover;
+}
+
+img {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+}

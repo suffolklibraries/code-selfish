@@ -1,0 +1,19 @@
+@media screen, projection {
+
+.vbox {
+    border: 1px solid #EFEFEF;
+    margin-bottom: $single-line;
+}
+
+.vbox-title {
+    font-size: $size-4;
+    padding: 0.4em 0.8em;
+    border-bottom: 1px solid #EFEFEF;
+    background-color: #F1F1F1;
+}
+
+.vbox-text {
+    padding: 0.4em 0.8em;
+}
+
+}

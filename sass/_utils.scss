@@ -1,0 +1,23 @@
+@media screen, projection {
+
+.accessibility,
+.hide {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: ""; display: block;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+}

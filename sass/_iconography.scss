@@ -1,0 +1,26 @@
+@media screen, projection {
+
+.icon {
+    padding-left: $single-line;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 1em;
+}
+
+.icon-home {
+    background-image: url('images/home.svg');
+}
+
+.icon-search {
+    background-image: url('images/search.svg');
+}
+
+.icon-lock {
+    background-image: url('images/lock.svg');
+}
+
+.icon-card {
+    background-image: url('images/card.svg');
+}
+
+}
