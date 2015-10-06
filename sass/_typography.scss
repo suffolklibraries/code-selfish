@@ -1,0 +1,23 @@
+@media screen, projection {
+
+.text-right {
+    text-align: right;
+}
+
+.text-w-right {
+    
+    @media #{$bp} {
+        text-align: right;
+    }
+
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+}

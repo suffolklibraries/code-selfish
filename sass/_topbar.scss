@@ -3,6 +3,7 @@
 .topbar {
     padding: $single-line 0;
     background-color: $lgrey;
+
 }
 
 .topbar a {
@@ -15,8 +16,31 @@
     text-decoration: underline;
 }
 
+.topbar form {
+
+    @media #{$bp} {
+        margin-bottom: 0;
+    }
+
+}
+
 .topbar-purple {
     border-bottom: $quarter-line solid $corporate;
+}
+
+.topbar-title {
+    font-size: $size-4;
+    line-height: $single-line;
+    margin-bottom: $half-line;
+
+    @media #{$bp} {
+        margin-bottom: 0;
+    }
+
+}
+
+.topbar-nav {
+    font-size: $size-3;
 }
 
 }

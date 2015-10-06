@@ -22,125 +22,131 @@
 
 					<?php the_content(); ?>
 
-					<div class="g-row">
+					<nav id="nav">
 
-		                <div class="g-w-col1 g-w-left">
+						<h1 class="hide accessibility">Navigation</h1>
 
-		                    <section class="vbox">
+						<div class="g-row">
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Branches</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">Branch contact details and Ipswich Enterprise + Innovation hub.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Branches</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Branch contact details and Ipswich Enterprise + Innovation hub.</p>
 
-		                <div class="g-w-col1 g-w-left">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Help using the service</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">Guides to using the library services, costs &amp; what you can borrow.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Help using the service</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Guides to using the library services, costs &amp; what you can borrow.</p>
 
-		                <div class="g-w-col1 g-w-left g-w-last">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
+			                <div class="g-w-col1 g-w-left g-w-last">
 
-		                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
 
-		            </div> <!-- end .g-row -->
+			                    </section>
 
-		            <div class="g-row">
+			                </div>
 
-		                <div class="g-w-col1 g-w-left">
+			            </div> <!-- end .g-row -->
 
-		                    <section class="vbox">
+			            <div class="g-row">
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-calendar" href="#">Events &amp; activities</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">Special events and regular activities for children &amp; older people. Free computer training.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-calendar" href="#">Events &amp; activities</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Special events and regular activities for children &amp; older people. Free computer training.</p>
 
-		                <div class="g-w-col1 g-w-left">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-book-open" href="#">Reading</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">New in, suggestions, lists, groups and advice for children. Info on dyslexia and Irlens.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-book-open" href="#">Reading</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">New in, suggestions, lists, groups and advice for children. Info on dyslexia and Irlens.</p>
 
-		                <div class="g-w-col1 g-w-left g-w-last">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-newspaper" href="#">News &amp; blog</a></h1>
+			                <div class="g-w-col1 g-w-left g-w-last">
 
-		                        <p class="vbox-text">Announcements, press releases and our behind the scenes blog.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-newspaper" href="#">News &amp; blog</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Announcements, press releases and our behind the scenes blog.</p>
 
-		            </div> <!-- end .g-row -->
+			                    </section>
 
-					<div class="g-row">
+			                </div>
 
-		                <div class="g-w-col1 g-w-left">
+			            </div> <!-- end .g-row -->
 
-		                    <section class="vbox">
+						<div class="g-row">
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Information resources</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Information resources</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
 
-		                <div class="g-w-col1 g-w-left">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Community services</a></h1>
+			                <div class="g-w-col1 g-w-left">
 
-		                        <p class="vbox-text">Mobile libraries, home library service &amp; schools library service.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Community services</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Mobile libraries, home library service &amp; schools library service.</p>
 
-		                <div class="g-w-col1 g-w-left g-w-last">
+			                    </section>
 
-		                    <section class="vbox">
+			                </div>
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
+			                <div class="g-w-col1 g-w-left g-w-last">
 
-		                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
+			                    <section class="vbox">
 
-		                    </section>
+			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
 
-		                </div>
+			                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
 
-		            </div> <!-- end .g-row -->
+			                    </section>
+
+			                </div>
+
+			            </div> <!-- end .g-row -->
+
+					</nav>
 
 				</div>
 
