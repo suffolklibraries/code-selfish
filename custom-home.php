@@ -28,9 +28,9 @@
 
 		                    <section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Information resources</a></h1>
+		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Branches</a></h1>
 
-		                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
+		                        <p class="vbox-text">Branch contact details and Ipswich Enterprise + Innovation hub.</p>
 
 		                    </section>
 
@@ -40,9 +40,9 @@
 
 		                    <section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Community services</a></h1>
+		                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Help using the service</a></h1>
 
-		                        <p class="vbox-text">Mobile libraries, home library service &amp; schools library service.</p>
+		                        <p class="vbox-text">Guides to using the library services, costs &amp; what you can borrow.</p>
 
 		                    </section>
 
