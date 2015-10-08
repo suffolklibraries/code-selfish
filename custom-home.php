@@ -12,7 +12,7 @@
 
 						<?php the_post_thumbnail(); ?>
 
-						<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php the_excerpt(); ?></figcaption>
+						<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
 
 					</figure>
 

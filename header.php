@@ -25,13 +25,13 @@
 
 			<div class="g-row">
 
-				<div class="g-w-left g-w-col1">
+				<div class="g-w-left g-w-col2">
 
 					<h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="icon icon-home">Suffolk Libraries</a></h1>
 
 				</div>
 
-				<div class="g-w-right g-w-col2 g-w-last text-w-right">
+				<div class="g-w-right g-w-col4 g-w-last text-w-right">
 
 					<form id="searchform" class="form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 

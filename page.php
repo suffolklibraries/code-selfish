@@ -1,38 +1,53 @@
-<?php
-/**
- * The template for displaying pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that
- * other "pages" on your WordPress site will use a different template.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<?php if ( has_post_thumbnail() ) {?>
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+		<figure class="hero-splash hero-splash-<?php global $post; echo $post->post_name; ?>">
 
-			// Include the page content template.
-			get_template_part( 'content', 'page' );
+			<?php the_post_thumbnail(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
 
-		// End the loop.
-		endwhile;
-		?>
+		</figure>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	<?php } ?>
+
+	<div class="wrapper">
+
+		<div class="g-row">
+
+			<div class="g-w-col4 g-w-left">
+
+				<main id="content">
+
+					<article class="entry">
+
+						<div class="entry-header">
+
+							<h1 class="entry-title"><?php the_title(); ?>
+
+						</div>
+
+						<div class="entry-content">
+
+							<?php the_content(); ?>
+
+						</div>
+
+					</article>
+
+				</main>
+
+			</div>
+
+	<?php endwhile; else : ?>
+
+		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+	<?php endif; ?>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

@@ -25,7 +25,12 @@
 }
 
 .topbar-purple {
-    border-bottom: $quarter-line solid $corporate;
+    border-bottom: 1px solid $corporate;
+
+    @media #{$bp} {
+        border-bottom: $quarter-line solid $corporate;
+    }
+
 }
 
 .topbar-title {

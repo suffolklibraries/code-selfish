@@ -5,8 +5,14 @@
     margin-bottom: $single-line;
 }
 
-.hero-splash-home img {
-    border-bottom: $quarter-line solid $corporate;
+.hero-splash img {
+
+    border-bottom: 1px solid $corporate;
+
+    @media #{$bp} {
+        border-bottom: $quarter-line solid $corporate;
+    }
+
 }
 
 .hero-splash-text {
