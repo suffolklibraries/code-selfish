@@ -28,7 +28,7 @@
 
 						<div class="g-row">
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -40,7 +40,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -52,7 +52,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left g-w-last">
+			                <div class="g-w-col2 g-w-left g-w-last">
 
 			                    <section class="vbox">
 
@@ -68,7 +68,7 @@
 
 			            <div class="g-row">
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -80,7 +80,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -92,7 +92,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left g-w-last">
+			                <div class="g-w-col2 g-w-left g-w-last">
 
 			                    <section class="vbox">
 
@@ -108,7 +108,7 @@
 
 						<div class="g-row">
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -120,7 +120,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left">
+			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">
 
@@ -132,7 +132,7 @@
 
 			                </div>
 
-			                <div class="g-w-col1 g-w-left g-w-last">
+			                <div class="g-w-col2 g-w-left g-w-last">
 
 			                    <section class="vbox">
 
