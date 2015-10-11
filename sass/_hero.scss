@@ -5,20 +5,10 @@
     margin-bottom: $single-line;
 }
 
-.hero-splash img {
-
-    border-bottom: 1px solid $corporate;
-
-    @media #{$bp} {
-        border-bottom: $quarter-line solid $corporate;
-    }
-
-}
-
 .hero-splash-text {
     position: absolute;
-    bottom: $half-line;
-    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .hero-splash-text p {
@@ -27,6 +17,10 @@
     background-color: $dark;
     opacity: 0.9;
     color: $light;
+}
+
+.hero-splash-text-home p {
+    background-color: $corporate;
 }
 
 }

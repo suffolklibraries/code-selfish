@@ -2,12 +2,13 @@
 
 .topbar {
     padding: $single-line 0;
-    background-color: $lgrey;
+    background-color: $dark;
+    color: $lgrey;
 
 }
 
 .topbar a {
-    color: $dark;
+    color: $lgrey;
 }
 
 .topbar a:hover,
@@ -19,7 +20,15 @@
 .topbar form {
 
     @media #{$bp} {
-        margin-bottom: 0;
+        margin: -$half-line 0 $single-line 0;
+    }
+
+}
+
+.topbar #s {
+
+    @media #{$nbp} {
+        width: 20em;
     }
 
 }
@@ -37,15 +46,15 @@
     font-size: $size-4;
     line-height: $single-line;
     margin-bottom: $half-line;
-
-    @media #{$bp} {
-        margin-bottom: 0;
-    }
-
 }
 
 .topbar-nav {
     font-size: $size-3;
+
+    @media #{$bp} {
+        font-size: $size-4;
+    }
+
 }
 
 }

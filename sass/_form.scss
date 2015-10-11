@@ -1,14 +1,11 @@
 @media screen, projection {
 
-.form {
-    line-height: 1em;
+.pure-form-custom {
     margin-bottom: $half-line;
 }
 
-.form input {
+.pure-form-custom input[type="search"] {
     font-size: $size-4;
-    padding: $eighth-line;
-    font-family: $secondary-font;
 }
 
 }

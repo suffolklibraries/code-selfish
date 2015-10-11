@@ -33,10 +33,10 @@
 
 				<div class="g-w-right g-w-col4 g-w-last text-w-right">
 
-					<form id="searchform" class="form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+					<form id="searchform" class="pure-form pure-form-custom" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 
 						<input id="s" type="search" name="s" value=""></input>
-						<input id="searchsubmit" type="submit" name="s" class="button" value="Search"></input>
+						<input id="searchsubmit" type="submit" name="s" class="pure-button pure-button-primary" value="Search"></input>
 
 					</form>
 
@@ -44,15 +44,19 @@
 
 			</div> <!-- end .g-row -->
 
-			<ul class="h-nav topbar-nav">
+			<div class="g-row">
 
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>
-				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info">Help</a></li>
-				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone">Contact</a></li>
+				<ul class="h-nav topbar-nav">
 
-			</ul>
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>
+					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info">Help</a></li>
+					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone">Contact</a></li>
+
+				</ul>
+
+			</div>
 
 		</div> <!-- end .wrapper -->
 

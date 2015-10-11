@@ -2,8 +2,11 @@
 
 			<div class="wrapper">
 
-				<p>Footer content.</p>
+				<div class="g-row">
 
+					<p>Footer content.</p>
+
+				</div>
 
 			</div>
 
