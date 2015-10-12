@@ -30,6 +30,7 @@ a:hover,
 a:active,
 a:focus {
     color: $hover;
+    text-decoration: underline;
 }
 
 img {

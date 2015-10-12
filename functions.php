@@ -27,10 +27,24 @@ function cs_add_excerpts_to_pages() {
 add_action('init', 'cs_add_excerpts_to_pages');
 
 
+// Navigation menus
+function register_cs_menus() {
+
+  register_nav_menus(
+    array(
+      'tools-menu' => __( 'Tools menu' ),
+      'footer-menu' => __( 'Footer menu' )
+    )
+  );
+
+}
+add_action( 'init', 'register_cs_menus' );
+
+
 // Add descriptions to navigation mcrypt_enc_get_supported_key_sizes
 function cs_nav_description( $item_output, $item, $depth, $args ) {
 
-	if ( 'home' == $args->theme_location && $item->description ) {
+	if ( 'tools-menu' == $args->theme_location && $item->description ) {
 
 		$item_output = str_replace( $args->link_after . '</a>', '<div class="menu-item-description">' . $item->description . '</div>' . $args->link_after . '</a>', $item_output );
 
