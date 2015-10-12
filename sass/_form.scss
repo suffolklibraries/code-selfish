@@ -5,7 +5,11 @@
 }
 
 .pure-form-custom input[type="search"] {
-    font-size: $size-4;
+    font-size: $size-3;
+}
+
+.pure-button-custom {
+    font-size: $size-3 !important;
 }
 
 }

@@ -1,14 +1,14 @@
 @media screen, projection {
 
 .topbar {
-    padding: $single-line 0;
+    padding: $single-line $half-line $quarter-line $half-line;
     background-color: $dark;
-    color: $lgrey;
+    color: $light;
 
 }
 
 .topbar a {
-    color: $lgrey;
+    color: $light;
 }
 
 .topbar a:hover,
@@ -20,21 +20,23 @@
 .topbar form {
 
     @media #{$bp} {
-        margin: -$half-line 0 $single-line 0;
+        margin: -$quarter-line 0 $half-line 0;
     }
 
 }
 
 .topbar #s {
+    clear: both;
 
     @media #{$nbp} {
-        width: 20em;
+        clear: auto;
+        width: 18em;
     }
 
 }
 
 .topbar-purple {
-    border-bottom: 1px solid $corporate;
+    background-color: $corporate;
 
     @media #{$bp} {
         border-bottom: $quarter-line solid $corporate;
@@ -45,14 +47,20 @@
 .topbar-title {
     font-size: $size-4;
     line-height: $single-line;
-    margin-bottom: $half-line;
+    display: inline;
 }
 
 .topbar-nav {
     font-size: $size-3;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    margin-bottom: $quarter-line;
 
-    @media #{$bp} {
-        font-size: $size-4;
+    @media #{$nbp} {
+        -webkit-columns: auto;
+        -moz-columns: auto;
+        columns: auto;
     }
 
 }

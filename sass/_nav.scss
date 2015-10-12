@@ -1,17 +1,14 @@
 @media screen, projection {
 
-.h-nav-item {
 
-    float: left;
-    width: 50%;
+
+.h-nav-item {
     padding: 0 0 $half-line 0;
     list-style-type: none;
 
     @media #{$nbp} {
         display: inline;
         margin-right: $single-line;
-        float: auto;
-        width: auto;
         padding: 0;
     }
 
