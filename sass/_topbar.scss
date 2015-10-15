@@ -4,6 +4,7 @@
     padding: $single-line $half-line $quarter-line $half-line;
     background-color: $dark;
     color: $light;
+    margin-bottom: $double-line;
 
 }
 
@@ -20,7 +21,7 @@
 .topbar form {
 
     @media #{$bp} {
-        margin: -$quarter-line 0 $half-line 0;
+        margin: -$half-line 0 $half-line 0;
     }
 
 }

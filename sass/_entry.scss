@@ -1,3 +1,32 @@
+@media screen, projection {
+
+.entry {
+    padding-bottom: $single-line;
+}
+
+.entry-header {
+    padding-bottom: $single-line;
+}
+
+.entry-title {
+    font-size: $size-8;
+}
+
+.entry blockquote {
+    margin: $half-line $double-line;
+    padding-left: $half-line;
+    border-left: $quarter-line solid $lgrey;
+}
+
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dd {
+    margin-bottom: $half-line;
+}
+
 .entry-footer {
     font-family: $secondary-font;
+}
+
 }

@@ -7,8 +7,8 @@ $main-font: 'Source Sans Pro', sans-serif;
 $secondary-font: 'Source Sans Pro', sans-serif;
 
 // Breakpoints
-$bp: "screen and (min-width: 760px)";
-$nbp: "screen and (min-width: 1024px)";
+$bp: "screen and (min-width: 1000px)";
+$nbp: "screen and (min-width: 1200px)";
 
 // Line heights, widths and margins
 $base-line-height: 1.4;
@@ -21,7 +21,7 @@ $half-line: ($single-line / 2);
 $quarter-line: ($single-line / 4);
 $eighth-line: ($single-line / 8);
 $base-font-size: 106.75%;
-$widescreen-font-size: 106.75%;
+$widescreen-font-size: 125%;
 $max-width: 1600px;
 $wrapper-width: 75%;
 

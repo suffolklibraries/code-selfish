@@ -15,6 +15,22 @@ body {
     margin: 0 auto;
     background-color: $light;
     font-size: $base-font-size;
+
+    @media #{$nbp} {
+        font-size: $widescreen-font-size;
+    }
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+    line-height: 1.2em;
+    font-family: $secondary-font;
 }
 
 a {

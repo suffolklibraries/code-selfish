@@ -56,4 +56,20 @@ function cs_nav_description( $item_output, $item, $depth, $args ) {
 add_filter( 'walker_nav_menu_start_el', 'cs_nav_description', 10, 4 );
 
 
+// Add a sidebar
+function cs_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar',
+		'before_widget' => '<section class="vbox">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h1 class="vbox-title">',
+		'after_title'   => '</h1>',
+	) );
+
+}
+
+add_action( 'widgets_init', 'cs_widgets_init' );
+
 ?>

@@ -3,11 +3,12 @@
 .hero-splash {
     position: relative;
     margin-bottom: $single-line;
+    margin-top: -$double-line;
 }
 
 .hero-splash-text {
     position: absolute;
-    bottom: 0;
+    bottom: $quarter-line;
     right: 0;
 }
 

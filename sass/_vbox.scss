@@ -7,13 +7,27 @@
 
 .vbox-title {
     font-size: $size-4;
-    padding: 0.4em 0.8em;
-    border-bottom: 1px solid #EFEFEF;
+    padding: $quarter-line $half-line;
+    border-bottom: 1px solid $lgrey;
     background-color: #F1F1F1;
 }
 
-.vbox-text {
+.vbox p {
     padding: 0.4em 0.8em;
+}
+
+.vbox ul,
+.vbox ol {
+    padding-top: $single-line;
+    margin-bottom: $single-line;
+    border-bottom: 1px solid $lgrey;
+}
+
+.vbox li {
+    margin: 0;
+    padding: $quarter-line $half-line;
+    border-top: 1px solid $lgrey;
+    list-style-position: inside;
 }
 
 }
