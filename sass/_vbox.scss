@@ -26,7 +26,7 @@
 .vbox li {
     margin: 0;
     padding: $quarter-line $half-line;
-    border-top: 1px solid $lgrey;
+    border-top: 1px dotted $lgrey;
     list-style-position: inside;
 }
 
