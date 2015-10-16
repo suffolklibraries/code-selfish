@@ -2,9 +2,37 @@
 
 			<div class="wrapper">
 
-				<div class="g-row">
+				<div class="g-row clearfix secondary">
 
-					<p>Footer content.</p>
+					<div class="g-w-left g-w-col2">
+
+						<?php if ( is_active_sidebar( 'footer_area_one' ) ) : ?>
+
+							<?php dynamic_sidebar( 'footer_area_one' ); ?>
+
+						<?php endif; ?>
+
+					</div>
+
+					<div class="g-w-left g-w-col2">
+
+						<?php if ( is_active_sidebar( 'footer_area_two' ) ) : ?>
+
+							<?php dynamic_sidebar( 'footer_area_two' ); ?>
+
+						<?php endif; ?>
+
+					</div>
+
+					<div class="g-w-left g-w-col2 g-w-last">
+
+						<?php if ( is_active_sidebar( 'footer_area_three' ) ) : ?>
+
+							<?php dynamic_sidebar( 'footer_area_three' ); ?>
+
+						<?php endif; ?>
+
+					</div>
 
 				</div>
 

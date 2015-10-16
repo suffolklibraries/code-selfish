@@ -56,7 +56,7 @@ function cs_nav_description( $item_output, $item, $depth, $args ) {
 add_filter( 'walker_nav_menu_start_el', 'cs_nav_description', 10, 4 );
 
 
-// Add a sidebar
+// Add sidebars
 function cs_widgets_init() {
 
 	register_sidebar( array(
@@ -65,6 +65,33 @@ function cs_widgets_init() {
 		'before_widget' => '<section class="vbox">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h1 class="vbox-title">',
+		'after_title'   => '</h1>',
+	) );
+
+    register_sidebar( array(
+		'name'          => 'Footer area 1',
+		'id'            => 'footer_area_one',
+		'before_widget' => '<section class="nib-box">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h1 class="nib-box-title">',
+		'after_title'   => '</h1>',
+	) );
+
+    register_sidebar( array(
+		'name'          => 'Footer area 2',
+		'id'            => 'footer_area_two',
+		'before_widget' => '<section class="nib-box">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h1 class="nib-box-title">',
+		'after_title'   => '</h1>',
+	) );
+
+    register_sidebar( array(
+		'name'          => 'Footer area 3',
+		'id'            => 'footer_area_three',
+		'before_widget' => '<section class="nib-box">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h1 class="nib-box-title">',
 		'after_title'   => '</h1>',
 	) );
 

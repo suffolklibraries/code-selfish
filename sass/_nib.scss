@@ -1,0 +1,18 @@
+@media screen, projection {
+
+.nib-box {
+    margin-bottom: $single-line;
+}
+
+.nib-box-title {
+    font-size: 1em;
+    margin-bottom: $quarter-line;
+}
+
+.nib-box p,
+.nib-box ul,
+.nib-box ol {
+    margin-bottom: $half-line;
+}
+
+}

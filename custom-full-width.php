@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-		<main id="content" class="site-main" role="main">
+		<main id="content" role="main">
 
 			<?php while (have_posts()) : the_post(); ?>
 
@@ -20,11 +20,11 @@
 
 				<div class="wrapper">
 
-					<div class="g-row">
+					<div class="g-row clearfix">
 
-						<article class="entry">
+						<article class="entry full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
 
-							<div class="entry-header">
+							<div class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
 
 								<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 

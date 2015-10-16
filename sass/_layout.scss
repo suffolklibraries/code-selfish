@@ -5,4 +5,15 @@
     margin: 0 auto;
 }
 
+.inner-wrapper {
+    max-width: $inner-wrapper-width;
+    margin: 0 auto;
+}
+
+#footer {
+    border-top: 1px solid $lgrey;
+    padding: $half-line 0;
+    margin-top: $half-line;
+}
+
 }

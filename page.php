@@ -16,7 +16,7 @@
 
 	<div class="wrapper">
 
-		<div class="g-row">
+		<div class="g-row clearfix">
 
 			<div class="g-w-col4 g-w-left">
 
