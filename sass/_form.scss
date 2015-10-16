@@ -5,11 +5,24 @@
 }
 
 .pure-form-custom input[type="search"] {
+
     font-size: $size-3;
+    font-family: $secondary-font;
+
+    @media #{$bp} {
+        font-size: $size-4;
+    }
 }
 
 .pure-button-custom {
+
     font-size: $size-3 !important;
+    font-family: $secondary-font;
+
+    @media #{$bp} {
+        font-size: $size-4 !important;
+    }
+
 }
 
 }

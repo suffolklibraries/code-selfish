@@ -23,31 +23,26 @@
 
 		<div class="g-row">
 
-			<div class="g-w-left g-w-col4">
+			<ul class="h-nav topbar-nav">
 
-				<ul class="h-nav topbar-nav">
+				<li class="h-nav-item"><h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="icon icon-home">Suffolk Libraries</a></h1></li>
+				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
+				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
+				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>
+				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info">Help</a></li>
+				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone">Contact</a></li>
+				<li class="h-nav-item">
 
-					<li class="h-nav-item"><h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="icon icon-home">Suffolk Libraries</a></h1></li>
-					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
-					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
-					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>
-					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info">Help</a></li>
-					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone">Contact</a></li>
+					<form id="searchform" class="pure-form pure-form-custom" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 
-				</ul>
+						<input id="s" type="search" name="s" value=""></input>
+						<input id="searchsubmit" type="submit" name="s" class="pure-button pure-button-custom" value="Search"></input>
 
-			</div>
+					</form>
 
-			<div class="g-w-right g-w-col2 g-w-last text-w-right">
+				</li>
 
-				<form id="searchform" class="pure-form pure-form-custom" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-
-					<input id="s" type="search" name="s" value=""></input>
-					<input id="searchsubmit" type="submit" name="s" class="pure-button pure-button-custom" value="Search"></input>
-
-				</form>
-
-			</div>
+			</ul>
 
 		</div> <!-- end .g-row -->
 

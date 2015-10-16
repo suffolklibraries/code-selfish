@@ -20,6 +20,8 @@
 
 .topbar form {
 
+    display: inline !important;
+
     @media #{$bp} {
         margin: -$half-line 0 $half-line 0;
     }
@@ -27,11 +29,11 @@
 }
 
 .topbar #s {
-    clear: both;
+
+    width: 12em;
 
     @media #{$nbp} {
-        clear: auto;
-        width: 18em;
+        width: 17em;
     }
 
 }
@@ -59,6 +61,7 @@
     margin-bottom: $quarter-line;
 
     @media #{$nbp} {
+        font-size: $size-3;
         -webkit-columns: auto;
         -moz-columns: auto;
         columns: auto;
