@@ -23,9 +23,9 @@
 
 		<div class="g-row">
 
-			<ul class="h-nav topbar-nav">
+			<ul class="h-nav topbar-nav clearfix">
 
-				<li class="h-nav-item"><h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="icon icon-home">Suffolk Libraries</a></h1></li>
+				<li class="h-nav-item"><h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Suffolk Libraries</a></h1></li>
 				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
 				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
 				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>

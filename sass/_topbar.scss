@@ -1,7 +1,7 @@
 @media screen, projection {
 
 .topbar {
-    padding: $single-line $half-line $quarter-line $half-line;
+    padding: $quarter-line $half-line 0 $half-line;
     background-color: $dark;
     color: $light;
     margin-bottom: $double-line;
@@ -19,13 +19,8 @@
 }
 
 .topbar form {
-
     display: inline !important;
-
-    @media #{$bp} {
-        margin: -$half-line 0 $half-line 0;
-    }
-
+    white-space: nowrap;
 }
 
 .topbar #s {
@@ -33,7 +28,7 @@
     width: 12em;
 
     @media #{$nbp} {
-        width: 17em;
+        width: 16em;
     }
 
 }
@@ -58,13 +53,14 @@
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
-    margin-bottom: $quarter-line;
+    padding-bottom: $half-line;
 
     @media #{$nbp} {
         font-size: $size-3;
         -webkit-columns: auto;
         -moz-columns: auto;
         columns: auto;
+        padding-bottom: $quarter-line;
     }
 
 }
