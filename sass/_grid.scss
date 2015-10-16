@@ -5,52 +5,52 @@
 	}
 
 	.g-col1 {
-		width: 15%;
+		width: 13.33333%;
 	}
 
 	.g-w-col1 {
 		@media #{$bp} {
-			width: 15%;
+			width: 13.33333%;
 		}
 	}
 
 	.g-col2 {
-		width: 32%;
+		width: 30.66666%;
 	}
 
 	.g-w-col2 {
 		@media #{$bp} {
-			width: 32%;
+			width: 30.66666%;
 		}
 	}
 
 	.g-col3 {
-		width: 49%;
+		width: 47.99999%;
 	}
 
 	.g-w-col3 {
 		@media #{$bp} {
-			width: 49%;
+			width: 47.99999%;
 		}
 	}
 
 	.g-col4 {
-		width: 66%;
+		width: 65.33332%;
 	}
 
 	.g-w-col4 {
 		@media #{$bp} {
-			width: 66%;
+			width: 65.33332%;
 		}
 	}
 
 	.g-col5 {
-		width: 83%;
+		width: 82.66665%;
 	}
 
 	.g-w-col5 {
 		@media #{$bp} {
-			width: 83%;
+			width: 82.66665%;
 		}
 	}
 
@@ -66,25 +66,25 @@
 
 	.g-left {
 		float: left;
-		margin-right: 2%;
+		margin-right: 4%;
 	}
 
 	.g-w-left {
 		@media #{$bp} {
 			float: left;
-			margin-right: 2%;
+			margin-right: 4%;
 		}
 	}
 
 	.g-right {
 		float: right;
-		margin-left: 2%;
+		margin-left: 4%;
 	}
 
 	.g-w-right {
 		@media #{$bp} {
 			float: right;
-			margin-left: 2%;
+			margin-left: 4%;
 		}
 	}
 
