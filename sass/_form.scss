@@ -4,6 +4,10 @@
     margin-bottom: $half-line;
 }
 
+.pure-form-custom input {
+    -webkit-appearance: none;
+}
+
 .pure-form-custom input[type="search"] {
 
     font-size: $size-3;
