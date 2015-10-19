@@ -46,7 +46,7 @@
 
 									<h1 class="vbox-title"><a href="#" class="icon icon-lock">Login &amp; renew</a></h1>
 
-									<p class="vbox-text">See your loans &amp; fines and renew books you have on loan.</p>
+									<p class="vbox-text">See your loans &amp; fines, renew titles and update your details.</p>
 
 								</section>
 
@@ -56,11 +56,11 @@
 
 								<section class="vbox">
 
-									<h1 class="vbox-title"><a href="#" class="icon icon-card">Apply for a card</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-tablet" href="#">eLibrary</a></h1>
 
-									<p class="vbox-text">Apply online to access books, music, CDs, research resources and the eLibrary.</p>
+			                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
 
-								</section>
+			                    </section>
 
 							</div>
 
@@ -72,7 +72,7 @@
 
 			                    <section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Branches</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-map" href="#">Branches</a></h1>
 
 			                        <p class="vbox-text">Branch contact details and Ipswich Enterprise + Innovation hub.</p>
 
@@ -84,7 +84,7 @@
 
 			                    <section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Help using the service</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-info" href="#">Help using the service</a></h1>
 
 			                        <p class="vbox-text">Guides to using the library services, costs &amp; what you can borrow.</p>
 
@@ -94,13 +94,13 @@
 
 			                <div class="g-w-col2 g-w-left g-w-last">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
+									<h1 class="vbox-title"><a href="#" class="icon icon-card">Apply for a card</a></h1>
 
-			                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
+									<p class="vbox-text">Apply online to access books, music, CDs, research resources and the eLibrary.</p>
 
-			                    </section>
+								</section>
 
 			                </div>
 
@@ -110,11 +110,11 @@
 
 			                <div class="g-w-col2 g-w-left">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-calendar" href="#">Events &amp; activities</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-library" href="#">Information resources</a></h1>
 
-			                        <p class="vbox-text">Special events and regular activities for children &amp; older people. Free computer training.</p>
+			                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
 
 			                    </section>
 
@@ -122,11 +122,11 @@
 
 			                <div class="g-w-col2 g-w-left">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-book-open" href="#">Reading</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-calendar" href="#">Events &amp; activities</a></h1>
 
-			                        <p class="vbox-text">New in, suggestions, lists, groups and advice for children. Info on dyslexia and Irlens.</p>
+			                        <p class="vbox-text">Special events and regular activities for children &amp; older people. Free computer training.</p>
 
 			                    </section>
 
@@ -134,11 +134,11 @@
 
 			                <div class="g-w-col2 g-w-left g-w-last">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-newspaper" href="#">News &amp; blog</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-bus" href="#">Schools, mobiles, home</a></h1>
 
-			                        <p class="vbox-text">Announcements, press releases and our behind the scenes blog.</p>
+			                        <p class="vbox-text">Mobile libraries, home library service &amp; Literacy, Books and Reading Team for Schools.</p>
 
 			                    </section>
 
@@ -150,11 +150,11 @@
 
 			                <div class="g-w-col2 g-w-left">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-info" href="#">Information resources</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-book" href="#">Reading</a></h1>
 
-			                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
+			                        <p class="vbox-text">New in, suggestions, lists, groups and advice for children. Info on dyslexia and Irlens.</p>
 
 			                    </section>
 
@@ -162,23 +162,11 @@
 
 			                <div class="g-w-col2 g-w-left">
 
-			                    <section class="vbox">
+								<section class="vbox">
 
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-bus" href="#">Community services</a></h1>
+			                        <h1 class="vbox-title"><a class="icon icon-pen" href="#">News &amp; blog</a></h1>
 
-			                        <p class="vbox-text">Mobile libraries, home library service &amp; schools library service.</p>
-
-			                    </section>
-
-			                </div>
-
-			                <div class="g-w-col2 g-w-left g-w-last">
-
-			                    <section class="vbox">
-
-			                        <h1 class="vbox-title"><a class="vbox-link vbox-link-tablet" href="#">eLibrary</a></h1>
-
-			                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
+			                        <p class="vbox-text">Announcements, press releases and our behind the scenes blog.</p>
 
 			                    </section>
 

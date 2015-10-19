@@ -1,53 +1,63 @@
-<?php
-/**
- * The template for displaying search results pages.
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<div class="inner-wrapper">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div class="g-row">
 
-		<?php if ( have_posts() ) : ?>
+			<main id="content">
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyfifteen' ), get_search_query() ); ?></h1>
-			</header><!-- .page-header -->
+				<article class="entry">
 
-			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post(); ?>
+					<div class="entry-header">
 
-				<?php
-				/*
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'content', 'search' );
+						<h1 class="entry-title">Your search for &#8220;<?php echo get_search_query(); ?>&#8221;</h2>
 
-			// End the loop.
-			endwhile;
+					</div>
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
+					<div class="entry-content"><p>Looking for a particular book, film or song(s) to borrow? Search:</p>
 
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
+						<ul>
+							<li><a href="http://suffolk.spydus.co.uk">Catalogue of print books, CDs and DVDs</a></li>
+							<li><a href="<?php bloginfo('url'); ?>/elibrary">elibrary of ebooks and MP3s</a></li>
+						</ul>
 
-		endif;
-		?>
+					</div>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+					<script>
+						(function() {
+						var cx = '005184331307728575178:aigcnsbfsr0';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							'//cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+						})();
+					</script>
+
+					<gcse:searchresults-only queryParameterName="s" linkTarget="_parent"></gcse:searchresults-only>
+
+					<noscript>
+
+						<p>Search this site with Google.</p>
+
+						<form method="get" action="http://www.google.com/search" class="pure-form form-custom" role="search" id="search">
+
+							<input type="search" name="q">
+							<input type="submit" class="pure-button" value="Search">
+							<input type="hidden" name="sitesearch" value="suffolklibraries.co.uk">
+
+						</form>
+
+					</noscript>
+
+				</article> <!-- end .entry -->
+
+			</main>
+
+		</div> <!-- end .g-row -->
+
+	</div> <!-- end .inner-wrapper -->
 
 <?php get_footer(); ?>

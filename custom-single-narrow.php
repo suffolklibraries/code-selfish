@@ -18,33 +18,29 @@
 
 				<?php } ?>
 
-				<div class="wrapper">
+				<div class="inner-wrapper">
 
 					<div class="g-row clearfix">
 
-                        <div class="inner-wrapper">
+						<article class="entry single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">
 
-    						<article class="entry single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">
+							<div class="entry-header single-narrow-header single-narrow-header-<?php global $post; echo $post->post_name; ?>">
 
-    							<div class="entry-header single-narrow-header single-narrow-header-<?php global $post; echo $post->post_name; ?>">
+								<h1 class="entry-title single-narrow-title single-narrow-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 
-    								<h1 class="entry-title single-narrow-title single-narrow-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
+							</div>
 
-    							</div>
+							<div class="entry-content single-narrow-content single-narrow-content-<?php global $post; echo $post->post_name; ?>">
 
-    							<div class="entry-content single-narrow-content single-narrow-content-<?php global $post; echo $post->post_name; ?>">
+								<?php the_content(); ?>
 
-    								<?php the_content(); ?>
+							</div>
 
-    							</div>
-
-    						</article>
-
-                        </div> <!-- end .inner-wrapper -->
+						</article>
 
 					</div> <!-- end .g-row -->
 
-				</div> <!-- end .wrapper -->
+				</div> <!-- end .inner-wrapper -->
 
 			<?php endwhile; ?>
 

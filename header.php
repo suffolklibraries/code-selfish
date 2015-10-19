@@ -49,7 +49,7 @@
 					<form id="searchform" class="pure-form pure-form-custom" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 
 						<input id="s" type="search" name="s" value=""></input>
-						<input id="searchsubmit" type="submit" name="s" class="pure-button pure-button-custom" value="Search"></input>
+						<input id="searchsubmit" type="submit" class="pure-button pure-button-custom" value="Search"></input>
 
 					</form>
 

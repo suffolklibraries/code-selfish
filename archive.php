@@ -1,64 +1,70 @@
-<?php
-/**
- * The template for displaying archive pages
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * If you'd like to further customize these archive views, you may create a
- * new template file for each one. For example, tag.php (Tag archives),
- * category.php (Category archives), author.php (Author archives), etc.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+	<div class="inner-wrapper">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div class="g-row">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+				<main id="content">
 
-			<?php
-			// Start the Loop.
-			while ( have_posts() ) : the_post();
+					<article class="entry">
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
+						<header class="entry-header">
 
-			// End the loop.
-			endwhile;
+							<?php
 
-			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
+								the_archive_title( '<h1 class="entry-title">', '</h1>' );
+								the_archive_description( '<p class="secondary">', '</div>' );
 
-		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
+							?>
 
-		endif;
-		?>
+						</header> <!-- .entry-header -->
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+						<?php while ( have_posts() ) : the_post(); ?>
+
+							<article class="slot">
+
+								<header class="slot-header">
+
+									<h1 class="slot-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+									<p class="slot-meta secondary">Posted <time class="updated" pubdate><?php the_date('d M Y'); ?></time></p>
+
+								</header>
+
+								<div class="slot-excerpt">
+
+									<?php the_excerpt(); ?>
+
+								</div>
+
+							</article>
+
+						<?php endwhile; ?>
+
+						<?php the_posts_pagination( array(
+
+							'prev_text'          => __( 'Previous page', 'cs' ),
+							'next_text'          => __( 'Next page', 'cs' ),
+							'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'cs' ) . ' </span>',
+
+						) );
+
+						?>
+
+					<?php else : ?>
+
+						<p>No posts.</p>
+
+					<?php endif; ?>
+
+				</article> <!-- end .entry -->
+
+			</main>
+
+		</div> <!-- end .g-row -->
+
+	</div> <!-- end .wrapper -->
 
 <?php get_footer(); ?>

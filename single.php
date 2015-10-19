@@ -1,48 +1,59 @@
-<?php
-/**
- * The template for displaying all single posts and attachments
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<?php if ( has_post_thumbnail() ) {?>
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+		<figure class="hero-splash hero-splash-<?php global $post; echo $post->post_name; ?>">
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
+			<?php the_post_thumbnail(); ?>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
 
-			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
+		</figure>
 
-		// End the loop.
-		endwhile;
-		?>
+	<?php } ?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	<div class="wrapper">
+
+		<div class="g-row">
+
+			<div class="g-w-col4 g-w-left">
+
+				<main id="content">
+
+					<article class="entry">
+
+						<div class="entry-header">
+
+							<h1 class="entry-title"><?php the_title(); ?>
+
+						</div>
+
+						<div class="entry-content">
+
+							<?php the_content(); ?>
+
+						</div>
+
+						<footer class="entry-footer">
+
+								<p class="entry-meta secondary">Posted <time class="updated" pubdate><?php the_date('d M Y'); ?></time></p>
+
+						</footer>
+
+					</article>
+
+				</main>
+
+			</div>
+
+	<?php endwhile; else : ?>
+
+		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+
+	<?php endif; ?>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

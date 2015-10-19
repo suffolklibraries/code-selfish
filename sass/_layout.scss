@@ -1,13 +1,23 @@
 @media screen, projection {
 
 .wrapper {
-    max-width: $wrapper-width;
+    padding: 0 $half-line;
+
+    @media #{$bp} {
+        max-width: $wrapper-width;
+    }
+
     margin: 0 auto;
 }
 
 .inner-wrapper {
-    max-width: $inner-wrapper-width;
+
+    @media #{$bp} {
+        max-width: $inner-wrapper-width;
+    }
+
     margin: 0 auto;
+    padding: 0 $half-line;
 }
 
 #footer {

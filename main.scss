@@ -8,7 +8,7 @@ $secondary-font: 'Source Sans Pro', sans-serif;
 
 // Breakpoints
 $bp: "screen and (min-width: 800px)";
-$nbp: "screen and (min-width: 960px)";
+$nbp: "screen and (min-width: 1150px)";
 
 // Line heights, widths and margins
 $base-line-height: 1.4;
@@ -24,7 +24,7 @@ $base-font-size: 106.75%;
 $widescreen-font-size: 118.75%;
 $max-width: 1600px;
 $wrapper-width: 75%;
-$inner-wrapper-width: 40em;
+$inner-wrapper-width: 47.99999%;
 
 // Type scale (see http://type-scale.com/ minor third)
 $size-1: 0.579em;
@@ -70,5 +70,6 @@ $corporate: #642D91;
 "sass/button",
 "sass/typography",
 "sass/pure",
-"sass/nib"
+"sass/nib",
+"sass/slot"
 ;
