@@ -18,6 +18,12 @@
     text-decoration: underline;
 }
 
+.topbar-title {
+    font-size: $size-4;
+    line-height: $single-line;
+    display: inline;
+}
+
 .topbar form {
     display: inline !important;
     white-space: nowrap;
@@ -40,12 +46,6 @@
         border-bottom: $quarter-line solid $corporate;
     }
 
-}
-
-.topbar-title {
-    font-size: $size-4;
-    line-height: $single-line;
-    display: inline;
 }
 
 .topbar-nav {

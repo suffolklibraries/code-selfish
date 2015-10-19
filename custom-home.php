@@ -28,6 +28,46 @@
 
 						<div class="g-row">
 
+							<div class="g-w-col2 g-w-left">
+
+								<section class="vbox">
+
+									<h1 class="vbox-title"><a href="#" class="icon icon-search">Search &amp; reserve</a></h1>
+
+									<p class="vbox-text">Search for books, CDs &amp; DVDs and reserve for collection from your library.</p>
+
+								</section>
+
+							</div>
+
+							<div class="g-w-col2 g-w-left">
+
+								<section class="vbox">
+
+									<h1 class="vbox-title"><a href="#" class="icon icon-lock">Login &amp; renew</a></h1>
+
+									<p class="vbox-text">See your loans &amp; fines and renew books you have on loan.</p>
+
+								</section>
+
+							</div>
+
+							<div class="g-w-col2 g-w-left g-w-last">
+
+								<section class="vbox">
+
+									<h1 class="vbox-title"><a href="#" class="icon icon-card">Apply for a card</a></h1>
+
+									<p class="vbox-text">Apply online to access books, music, CDs, research resources and the eLibrary.</p>
+
+								</section>
+
+							</div>
+
+						</div> <!-- end .g-row -->
+
+						<div class="g-row">
+
 			                <div class="g-w-col2 g-w-left">
 
 			                    <section class="vbox">

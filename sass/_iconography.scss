@@ -7,28 +7,64 @@
     background-size: 1em;
 }
 
-.icon-home {
+/* White icons with purple fill */
+
+.icon-home-white {
     background-image: url('images/home-white.svg');
 }
 
-.icon-search {
+.icon-search-white {
     background-image: url('images/search-white.svg');
 }
 
-.icon-lock {
+.icon-lock-white {
     background-image: url('images/lock-white.svg');
 }
 
-.icon-card {
+.icon-card-white {
     background-image: url('images/card-white.svg');
 }
 
-.icon-phone {
+.icon-phone-white {
     background-image: url('images/phone-white.svg');
 }
 
-.icon-info {
+.icon-info-white {
     background-image: url('images/info-white.svg');
+}
+
+.icon-email-white {
+    background-image: url('images/email-white.svg');
+}
+
+/* Black icons with white fill */
+
+.icon-home {
+    background-image: url('images/home.svg');
+}
+
+.icon-search {
+    background-image: url('images/search.svg');
+}
+
+.icon-lock {
+    background-image: url('images/lock.svg');
+}
+
+.icon-card {
+    background-image: url('images/card.svg');
+}
+
+.icon-phone {
+    background-image: url('images/phone.svg');
+}
+
+.icon-info {
+    background-image: url('images/info.svg');
+}
+
+.icon-email {
+    background-image: url('images/email.svg');
 }
 
 }

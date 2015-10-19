@@ -9,7 +9,8 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: ""; display: block;
+    content: "";
+    display: block;
 }
 
 .clearfix:after {

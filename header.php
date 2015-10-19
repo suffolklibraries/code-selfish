@@ -19,18 +19,31 @@
 
 <body <?php body_class(); ?>>
 
-	<header class="topbar topbar-purple clearfix" id="site-header">
+	<header class="topbar topbar-purple" id="site-header">
 
 		<div class="g-row">
 
 			<ul class="h-nav topbar-nav clearfix">
 
-				<li class="h-nav-item"><h1 class="topbar-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Suffolk Libraries</a></h1></li>
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search">Search &amp; reserve</a></li>
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock">Login &amp; renew</a></li>
-				<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card">Apply for a card</a></li>
-				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info">Help</a></li>
-				<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone">Contact</a></li>
+				<li class="h-nav-item"><h1 class="topbar-title"><a class="h-nav-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">Suffolk Libraries</a></h1></li>
+
+				<?php if ( ! is_front_page() ) {?>
+
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/" class="h-nav-link icon icon-search-white">Search &amp; reserve</a></li>
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="h-nav-link icon icon-lock-white">Login &amp; renew</a></li>
+					<li class="h-nav-item"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN" class="h-nav-link icon icon-card-white">Apply for a card</a></li>
+					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-info-white">Help</a></li>
+					<li class="h-nav-item"><a href="#" class="h-nav-link icon icon-phone-white">Contact</a></li>
+
+				<?php } ?>
+
+				<?php if ( is_front_page() ) {?>
+
+					<li class="h-nav-item"><a href="tel:01473263838" class="h-nav-link icon icon-phone-white">01473 263838</a></li>
+					<li class="h-nav-item"><a href="mailto:help@suffolklibraries.co.uk" class="h-nav-link icon icon-email-white">help@suffolklibraries.co.uk</a></li>
+
+				<?php } ?>
+
 				<li class="h-nav-item">
 
 					<form id="searchform" class="pure-form pure-form-custom" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
