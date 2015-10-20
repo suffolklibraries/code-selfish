@@ -172,6 +172,18 @@
 
 			                </div>
 
+							<div class="g-w-col2 g-w-left g-w-last">
+
+								<section class="vbox">
+
+			                        <h1 class="vbox-title"><a class="icon icon-people" href="#">About us</a></h1>
+
+			                        <p class="vbox-text">Governance, board members, jobs and documents.</p>
+
+			                    </section>
+
+			                </div>
+
 			            </div> <!-- end .g-row -->
 
 					</nav>

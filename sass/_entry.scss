@@ -14,6 +14,9 @@
 
 .entry-content {
     padding-bottom: $half-line;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 .entry blockquote {

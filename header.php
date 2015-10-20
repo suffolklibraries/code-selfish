@@ -41,6 +41,8 @@
 
 					<li class="h-nav-item"><a href="tel:01473263838" class="h-nav-link icon icon-phone-white">01473 263838</a></li>
 					<li class="h-nav-item"><a href="mailto:help@suffolklibraries.co.uk" class="h-nav-link icon icon-email-white">help@suffolklibraries.co.uk</a></li>
+					<li class="h-nav-item"><a href="http://twitter.com/suffolklibrary" class="h-nav-link icon icon-twitter-white">Twitter</a></li>
+					<li class="h-nav-item"><a href="http://facebook.com/suffolklibraries" class="h-nav-link icon icon-facebook-white">Facebook</a></li>
 
 				<?php } ?>
 
