@@ -18,7 +18,7 @@
 
 .vbox ul,
 .vbox ol {
-    padding-top: $single-line;
+    padding-top: $half-line;
     margin-bottom: $single-line;
     border-bottom: 1px dotted $lgrey;
 }
@@ -28,6 +28,13 @@
     padding: $quarter-line $half-line;
     border-top: 1px dotted $lgrey;
     list-style-type: none;
+}
+
+// Change how wordpress displays dates in category widgets
+
+.vbox .post-date {
+    display: inline;
+    color: $grey;
 }
 
 }
