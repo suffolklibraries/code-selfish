@@ -25,7 +25,7 @@
 
 			<ul class="h-nav topbar-nav clearfix">
 
-				<li class="h-nav-item"><h1 class="topbar-title"><a class="h-nav-link" href="<?php echo esc_url( home_url( '/' ) ); ?>">Suffolk Libraries</a></h1></li>
+				<li class="h-nav-item"><h1 class="topbar-title"><a class="h-nav-link" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span class="weight-semib">Suffolk</span> <span class="weight-normal">Libraries</span></a></h1></li>
 
 				<?php if ( ! is_front_page() ) {?>
 
