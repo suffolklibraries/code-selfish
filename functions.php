@@ -6,7 +6,7 @@ function cs_styles() {
     $main_style = 'main-style';
     $pure_styles = 'pure-styles';
     wp_enqueue_style( $main_style, get_template_directory_uri() . '/main.css' );
-    wp_enqueue_script( 'source-sans-pro', get_stylesheet_directory_uri() . '/js/fonts.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'source-sans-pro', get_stylesheet_directory_uri() . '/js/fonts.js', array(), '1.0.0', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'cs_styles' );
