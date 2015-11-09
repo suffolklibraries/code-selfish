@@ -22,11 +22,11 @@
 
 							<?php if ( has_post_thumbnail() ) {?>
 
-								<figure class="hero-splash hero-splash-<?php global $post; echo $post->post_name; ?>">
+								<figure class="hero-splash hero-splash-in-entry hero-splash-<?php global $post; echo $post->post_name; ?>">
 
 									<?php the_post_thumbnail(); ?>
 
-									<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
+									<figcaption class="hero-splash-text hero-splash-in-entry-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
 
 								</figure>
 

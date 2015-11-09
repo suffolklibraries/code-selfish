@@ -11,8 +11,8 @@ $bp: "screen and (min-width: 800px)";
 $nbp: "screen and (min-width: 1150px)";
 
 // Line heights, widths and margins
-$base-line-height: 1.4;
-$single-line: 1.4em;
+$base-line-height: 1.45;
+$single-line: 1.45em;
 $line-and-a-half: ($single-line * 1.5);
 $double-line: ($single-line * 2);
 $treble-line: ($single-line * 3);
@@ -22,7 +22,7 @@ $quarter-line: ($single-line / 4);
 $eighth-line: ($single-line / 8);
 $base-font-size: 106.75%;
 $widescreen-font-size: 125%;
-$max-width: 1600px;
+$max-width: 1510px;
 $wrapper-width: 75%;
 $inner-wrapper-width: 47.99999%;
 
