@@ -6,7 +6,7 @@
 
 		<div class="g-row">
 
-			<div class="g-w-col4 g-w-left">
+			<div class="g-w-col8 g-w-left">
 
 				<main id="content">
 

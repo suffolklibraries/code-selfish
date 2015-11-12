@@ -4,7 +4,7 @@
 
 				<div class="g-row clearfix secondary">
 
-					<div class="g-w-left g-w-col2">
+					<div class="g-w-left g-w-col4">
 
 						<?php if ( is_active_sidebar( 'footer_area_one' ) ) : ?>
 
@@ -14,7 +14,7 @@
 
 					</div>
 
-					<div class="g-w-left g-w-col2">
+					<div class="g-w-left g-w-col4">
 
 						<?php if ( is_active_sidebar( 'footer_area_two' ) ) : ?>
 
@@ -24,7 +24,7 @@
 
 					</div>
 
-					<div class="g-w-left g-w-col2 g-w-last">
+					<div class="g-w-left g-w-col4">
 
 						<?php if ( is_active_sidebar( 'footer_area_three' ) ) : ?>
 
