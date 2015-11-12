@@ -188,10 +188,54 @@
 
 					</nav>
 
-				</div>
+				</div> <!-- end .wrapper -->
 
 			<?php endwhile; ?>
 
-		</main>
+			<?php $the_query = new WP_Query( 'category_name=hot-picks&posts_per_page=6' ); ?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+
+					<div class="g-row">
+
+						<section class="content-band clearfix" id="hot-picks">
+
+							<div class="wrapper">
+
+								<h1 class="content-band-title">Hot picks</h1>
+
+								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+									<div class="g-w-left g-w-col2">
+
+										<article class="nib-box secondary">
+
+											<?php if ( has_post_thumbnail() ) : ?>
+
+								                <a href="<?php echo CFS()->get('catalogue_link'); ?>"><?php the_post_thumbnail(); ?></a>
+
+											<?php endif; ?>
+
+											<h1 class="nib-box-title"><a href="<?php echo CFS()->get('catalogue_link'); ?>"><?php the_title(); ?></a></p>
+
+										</article>
+
+									</div>
+
+								<?php endwhile; ?>
+
+							</div>
+
+						</section>
+
+					</div> <!-- end .g-row -->
+
+				<?php endif; ?>
+
+			<?php wp_reset_postdata(); ?>
+
+		</section>
+
+	</main>
 
 <?php get_footer(); ?>

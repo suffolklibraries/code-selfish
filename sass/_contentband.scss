@@ -1,0 +1,17 @@
+@media screen, projection {
+
+.content-band {
+    padding: $half-line 0;
+    border-top: 1px solid $lgrey;
+}
+
+.content-band-title {
+    font-size: $size-5;
+    margin-bottom: $quarter-line;
+}
+
+.content-band-reversed {
+    background-color: $lgrey;
+}
+
+}
