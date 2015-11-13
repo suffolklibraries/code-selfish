@@ -242,13 +242,13 @@
 
 		<?php wp_reset_postdata(); ?>
 
-		<section class="content-band clearfix" id="recommend">
+		<section class="content-band clearfix reversed-light" id="recommend">
 
 			<div class="wrapper">
 
 				<div class="g-row">
 
-					<div class="g-w-col14 g-w-left">
+					<div class="g-w-col112 g-w-left">
 
 					<h1 class="content-band-title">New in and recommendations</h1>
 
@@ -264,7 +264,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-						<div class="g-w-left g-w-col4">
+						<div class="g-w-left g-w-col3">
 
 							<section class="nib-box">
 
@@ -292,7 +292,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -322,7 +322,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -344,10 +344,6 @@
 
 					<?php wp_reset_postdata(); ?>
 
-				</div> <!-- end .g-row -->
-
-				<div class="g-row">
-
 					<!-- Non fiction -->
 
 					<?php $the_query = new WP_Query( 'category_name=non-fiction-lists&posts_per_page=1' ); ?>
@@ -356,7 +352,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -378,6 +374,10 @@
 
 					<?php wp_reset_postdata(); ?>
 
+				</div> <!-- end .g-row -->
+
+				<div class="g-row">
+
 					<!-- Music -->
 
 					<?php $the_query = new WP_Query( 'category_name=music-lists&posts_per_page=1' ); ?>
@@ -386,7 +386,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -416,7 +416,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -438,10 +438,6 @@
 
 					<?php wp_reset_postdata(); ?>
 
-				</div> <!-- end .g-row -->
-
-				<div class="g-row">
-
 					<!-- Local interest -->
 
 					<?php $the_query = new WP_Query( 'category_name=local-interest&posts_per_page=1' ); ?>
@@ -450,7 +446,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -480,7 +476,7 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col4">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box">
 
@@ -502,39 +498,29 @@
 
 					<?php wp_reset_postdata(); ?>
 
-					<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
+				</div> <!-- end .g-row -->
 
-					<?php if ( $the_query->have_posts() ) : ?>
+			</div> <!-- end .wrapper -->
 
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		</section>
 
-							<div class="g-w-left g-w-col4">
+		<section class="reversed content-band clearfix" id="radio">
 
-								<section class="nib-box">
+			<div class="wrapper">
 
-									<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
+				<div class="g-row">
 
-									<?php if ( has_post_thumbnail() ) : ?>
+					<div class="g-w-left g-w-col12">
 
-									<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
+						<h1 class="content-band-title">From our staff</h1>
 
-									<?php endif; ?>
-
-								</section> <!-- end .nib-box -->
-
-							</div>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>
-
-					<?php wp_reset_postdata(); ?>
+					</div>
 
 				</div> <!-- end .g-row -->
 
 				<div class="g-row">
 
-					<?php $the_query = new WP_Query( 'category_name=lesleys-readers&posts_per_page=1' ); ?>
+					<?php $the_query = new WP_Query( 'page_id=3443&posts_per_page=1' ); ?>
 
 					<?php if ( $the_query->have_posts() ) : ?>
 
@@ -544,13 +530,13 @@
 
 								<section class="nib-box secondary">
 
-									<h1 class="nib-box-title"><a href="category/lesleys-readers">Lesley's Readers</a></h1>
+									<h1 class="nib-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
 
 									<p>Our monthly book discussion with Radio Suffolk's Lesley Dolphin.</p>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
-									<a href="category/lesleys-readers"><?php the_post_thumbnail(); ?></a>
+									<a href="reading-lists-groups-advice/lesleys-readers"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
 
@@ -577,6 +563,70 @@
 						</section>
 
 					</div>
+
+				</div> <!-- end .g-row -->
+
+				<div class="g-row">
+
+					<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col6">
+
+								<section class="nib-box secondary">
+
+									<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
+
+									<p>Library staff share their recommendations.</p>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section>
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<?php $the_query = new WP_Query( 'category_name=literacy&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col6">
+
+								<section class="nib-box secondary">
+
+									<h1 class="nib-box-title"><a href="category/literacy">Beyond the Book</a></h1>
+
+									<p>Reviews and literacy resources for parents &amp; teachers.</p>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/literacy"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section>
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
 
 				</div> <!-- end .g-row -->
 
