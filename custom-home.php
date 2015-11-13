@@ -196,7 +196,7 @@
 
 			<?php if ( $the_query->have_posts() ) : ?>
 
-				<section class="content-band clearfix" id="hot-picks">
+				<section class="content-band reversed clearfix" id="hot-picks">
 
 					<div class="wrapper">
 
@@ -204,7 +204,7 @@
 
 							<div class="g-w-col12 g-w-left">
 
-								<h1 class="content-band-title">Hot picks</h1>
+								<h1 class="content-band-title">Popular</h1>
 
 							</div>
 
@@ -248,9 +248,9 @@
 
 				<div class="g-row">
 
-					<div class="g-w-col12 g-w-left">
+					<div class="g-w-col14 g-w-left">
 
-						<h1 class="content-band-title">New in and recommendations</h1>
+					<h1 class="content-band-title">New in and recommendations</h1>
 
 					</div>
 
@@ -264,27 +264,319 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col2">
+						<div class="g-w-left g-w-col4">
 
-								<div class="nib-box">
+							<section class="nib-box">
 
-									<h1 class="nib-box-title"><a href="category/book-lists">Fiction</a></h3>
+								<h1 class="nib-box-title"><a href="category/book-lists">Fiction</a></h1>
+
+								<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/book-lists"><?php the_post_thumbnail(); ?></a>
+
+								<?php endif; ?>
+
+							</section> <!-- end .nib-box -->
+
+						</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<?php $the_query = new WP_Query( 'category_name=film-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/film-lists">Films &amp; DVDs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
-										<a href="category/book-lists"><?php the_post_thumbnail(); ?></a>
+									<a href="category/book-lists"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
 
-								</div> <!-- end .nib-box -->
+								</section> <!-- end .nib-box -->
 
-							  </div>
+							</div>
 
-						  <?php endwhile; ?>
+						<?php endwhile; ?>
 
-					 <?php endif; ?>
+					<?php endif; ?>
 
-					 <?php wp_reset_postdata(); ?>
+					<?php wp_reset_postdata(); ?>
+
+					<!-- Children's -->
+
+					<?php $the_query = new WP_Query( 'category_name=childrens-book-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/childrens-book-lists">Children &amp; YAs</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/childrens-book-lists"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+				</div> <!-- end .g-row -->
+
+				<div class="g-row">
+
+					<!-- Non fiction -->
+
+					<?php $the_query = new WP_Query( 'category_name=non-fiction-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/non-fiction-lists">Non-fiction</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/non-fiction-lists"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<!-- Music -->
+
+					<?php $the_query = new WP_Query( 'category_name=music-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/music-lists">Music</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/music-lists"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<!-- Mental health -->
+
+					<?php $the_query = new WP_Query( 'category_name=mental-health-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/mental-health-lists">Mental health</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/mental-health-lists"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+				</div> <!-- end .g-row -->
+
+				<div class="g-row">
+
+					<!-- Local interest -->
+
+					<?php $the_query = new WP_Query( 'category_name=local-interest&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/local-interest">Local interest</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/local-interest"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<!-- For book clubs -->
+
+					<?php $the_query = new WP_Query( 'category_name=book-club-lists&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/book-club-lists">For book clubs</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/book-club-lists"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col4">
+
+								<section class="nib-box">
+
+									<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section> <!-- end .nib-box -->
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+				</div> <!-- end .g-row -->
+
+				<div class="g-row">
+
+					<?php $the_query = new WP_Query( 'category_name=lesleys-readers&posts_per_page=1' ); ?>
+
+					<?php if ( $the_query->have_posts() ) : ?>
+
+						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+							<div class="g-w-left g-w-col6">
+
+								<section class="nib-box secondary">
+
+									<h1 class="nib-box-title"><a href="category/lesleys-readers">Lesley's Readers</a></h1>
+
+									<p>Our monthly book discussion with Radio Suffolk's Lesley Dolphin.</p>
+
+									<?php if ( has_post_thumbnail() ) : ?>
+
+									<a href="category/lesleys-readers"><?php the_post_thumbnail(); ?></a>
+
+									<?php endif; ?>
+
+								</section>
+
+							</div>
+
+						<?php endwhile; ?>
+
+					<?php endif; ?>
+
+					<?php wp_reset_postdata(); ?>
+
+					<div class="g-w-left g-w-col6">
+
+						<section class="nib-box secondary">
+
+							<h1 class="nib-box-title"><a href="/bookedout">Booked Out</a></h1>
+
+							<p>Our monthly books podcast from Woodbridge Library.</p>
+
+			            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
+
+						</section>
+
+					</div>
 
 				</div> <!-- end .g-row -->
 
