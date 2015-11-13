@@ -196,19 +196,27 @@
 
 				<?php if ( $the_query->have_posts() ) : ?>
 
-					<div class="g-row">
+					<section class="content-band clearfix" id="hot-picks">
 
-						<section class="content-band clearfix" id="hot-picks">
+						<div class="wrapper">
 
-							<div class="wrapper">
+							<div class="g-row">
 
-								<h1 class="content-band-title">Hot picks</h1>
+								<div class="g-w-col12 g-w-left">
+
+									<h1 class="content-band-title">Hot picks</h1>
+
+								</div>
+
+							</div> <!-- end .g-row -->
+
+							<div class="g-row">
 
 								<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 									<div class="g-w-left g-w-col2">
 
-										<article class="nib-box secondary">
+										<div class="nib-box secondary">
 
 											<?php if ( has_post_thumbnail() ) : ?>
 
@@ -216,19 +224,19 @@
 
 											<?php endif; ?>
 
-											<h1 class="nib-box-title"><a href="<?php echo CFS()->get('catalogue_link'); ?>"><?php the_title(); ?></a></p>
+											<p><a href="<?php echo CFS()->get('catalogue_link'); ?>"><?php the_title(); ?></a></p>
 
-										</article>
+										</div> <!-- end .nib-box -->
 
 									</div>
 
 								<?php endwhile; ?>
 
-							</div>
+							</div> <!-- end .g-row -->
 
-						</section>
+						</div> <!-- end .wrapper -->
 
-					</div> <!-- end .g-row -->
+					</section>
 
 				<?php endif; ?>
 
