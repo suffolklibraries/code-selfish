@@ -300,7 +300,7 @@
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
-									<a href="category/book-lists"><?php the_post_thumbnail(); ?></a>
+									<a href="category/film-lists"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
 
@@ -556,7 +556,7 @@
 
 							<h1 class="nib-box-title"><a href="/bookedout">Booked Out</a></h1>
 
-							<p>Our monthly books podcast from Woodbridge Library.</p>
+							<p>Our monthly books podcast from the team atm Woodbridge Library.</p>
 
 			            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
 
