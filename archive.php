@@ -17,7 +17,7 @@
 								<?php
 
 									the_archive_title( '<h1 class="entry-title">', '</h1>' );
-									the_archive_description( '<p class="secondary">', '</div>' );
+									the_archive_description( '<div class="panel clearfix"><p class="secondary">', '</p></div>' );
 
 								?>
 
@@ -35,9 +35,9 @@
 
 										<?php if ( has_post_thumbnail() ) {?>
 
-											<figure class="hero-splash hero-splash-in-entry hero-splash-<?php global $post; echo $post->post_name; ?> slot-pic">
+											<figure class="hero-splash hero-splash-in-entry hero-splash-in-entry-text hero-splash-<?php global $post; echo $post->post_name; ?> slot-pic">
 
-												<?php the_post_thumbnail(); ?>
+												<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 
 											</figure>
 
