@@ -24,7 +24,7 @@ $base-font-size: 106.75%;
 $widescreen-font-size: 125%;
 $max-width: 1510px;
 $wrapper-width: 75%;
-$inner-wrapper-width: 47.99999%;
+$inner-wrapper-width: 66.66666%;
 
 // Type scale (see http://type-scale.com/ minor third)
 $size-1: 0.579em;
@@ -75,5 +75,6 @@ $corporate: #642D91;
 "sass/contentband",
 "sass/reversed",
 "sass/wp",
-"sass/panel"
+"sass/panel",
+"sass/hub"
 ;
