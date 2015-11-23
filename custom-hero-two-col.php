@@ -1,6 +1,20 @@
+<?php /* Template Name: Two column hero page */ ?>
+
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+    <?php if ( has_post_thumbnail() ) {?>
+
+        <figure class="hero-splash hero-splash-col2 hero-splash-<?php global $post; echo $post->post_name; ?>">
+
+            <?php the_post_thumbnail(); ?>
+
+            <figcaption class="hero-splash-text hero-splash-col2-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
+
+        </figure>
+
+    <?php } ?>
 
 	<div class="wrapper">
 
@@ -19,18 +33,6 @@
 						</div>
 
 						<div class="entry-content">
-
-							<?php if ( has_post_thumbnail() ) {?>
-
-								<figure class="hero-splash hero-splash-in-entry hero-splash-<?php global $post; echo $post->post_name; ?>">
-
-									<?php the_post_thumbnail(); ?>
-
-									<figcaption class="hero-splash-text hero-splash-in-entry-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
-
-								</figure>
-
-							<?php } ?>
 
 							<?php the_content(); ?>
 

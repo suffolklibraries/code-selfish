@@ -1,10 +1,23 @@
-<?php /* Template Name: Full width page */ ?>
+<?php /* Template Name: Full width hero page */ ?>
 
 <?php get_header(); ?>
 
 		<main id="content" role="main">
 
 			<?php while (have_posts()) : the_post(); ?>
+
+            <?php if ( has_post_thumbnail() ) {?>
+
+                <figure class="hero-splash hero-splash-full-width hero-splash-<?php global $post; echo $post->post_name; ?>">
+
+                    <?php the_post_thumbnail(); ?>
+
+                    <figcaption class="hero-splash-text hero-splash-full-width-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
+
+                </figure>
+
+            <?php } ?>
+
 
 				<div class="wrapper">
 
@@ -19,18 +32,6 @@
 							</div>
 
 							<div class="entry-content full-width-content full-width-content-<?php global $post; echo $post->post_name; ?>">
-
-								<?php if ( has_post_thumbnail() ) {?>
-
-									<figure class="hero-splash hero-splash-in-entry hero-splash-full-width-content hero-splash-<?php global $post; echo $post->post_name; ?>">
-
-										<?php the_post_thumbnail(); ?>
-
-										<figcaption class="hero-splash-text hero-splash-in-entry-text hero-splash-full-width-content-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
-
-									</figure>
-
-								<?php } ?>
 
 								<?php the_content(); ?>
 

@@ -6,18 +6,6 @@
 
 			<?php while (have_posts()) : the_post(); ?>
 
-				<?php if ( has_post_thumbnail() ) {?>
-
-					<figure class="hero-splash hero-splash-<?php global $post; echo $post->post_name; ?>">
-
-						<?php the_post_thumbnail(); ?>
-
-						<figcaption class="hero-splash-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
-
-					</figure>
-
-				<?php } ?>
-
 				<div class="inner-wrapper">
 
 					<div class="g-row clearfix">
@@ -31,6 +19,18 @@
 							</div>
 
 							<div class="entry-content single-narrow-content single-narrow-content-<?php global $post; echo $post->post_name; ?>">
+
+								<?php if ( has_post_thumbnail() ) {?>
+
+									<figure class="hero-splash hero-splash-single-narrow hero-splash-<?php global $post; echo $post->post_name; ?>">
+
+										<?php the_post_thumbnail(); ?>
+
+										<figcaption class="hero-splash-text hero-splash-single-narrow-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
+
+									</figure>
+
+								<?php } ?>
 
 								<?php the_content(); ?>
 
