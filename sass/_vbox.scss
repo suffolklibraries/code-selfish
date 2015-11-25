@@ -1,15 +1,15 @@
 @media screen, projection {
 
 .vbox {
-    border: 1px solid #EFEFEF;
+    border: 1px solid $midgrey;
     margin-bottom: $single-line;
 }
 
 .vbox-title {
     font-size: $size-4;
     padding: $quarter-line $half-line;
-    border-bottom: 1px solid $lgrey;
-    background-color: #F1F1F1;
+    border-bottom: 1px solid $midgrey;
+    background-color: $lgrey;
 }
 
 .vbox p {

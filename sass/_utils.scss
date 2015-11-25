@@ -21,27 +21,37 @@
     zoom: 1;
 }
 
-.constrain {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-	margin-bottom: 1.333em;
+// include Foundation .flex-video class
+.constrain,
+.flex-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.333em;
 }
 
 .constrain iframe,
 .constrain object,
-.constrain embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+.constrain embed,
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .rounded {
     border-radius: 50%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
 
 
