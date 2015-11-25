@@ -62,3 +62,5 @@
 		</div> <!-- end .g-row -->
 
 	</header>
+
+	<?php get_template_part('inc/subnav'); ?>

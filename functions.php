@@ -32,12 +32,18 @@ function register_cs_menus() {
 
   register_nav_menus(
     array(
-      'tools-menu' => __( 'Tools menu' ),
-      'footer-menu' => __( 'Footer menu' )
+        'tools-menu' => __( 'Tools menu' ),
+        'footer-menu' => __( 'Footer menu' ),
+        'bookfest-menu' => __( 'Bookfest Menu' ),
+        'hub-menu' => __( 'Hub Menu' ),
+        'schools-menu' => __( 'Schools Menu' ),
+        'presents-menu' => __( 'Suffolk Presents Menu' ),
+        'literacy-menu' => __('Literacy Menu'),
     )
   );
 
 }
+
 add_action( 'init', 'register_cs_menus' );
 
 
