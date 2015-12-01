@@ -4,7 +4,8 @@
     padding: $half-line 0;
 }
 
-.content-band-title {
+.content-band-title,
+.content-band h1 {
     font-size: $size-5;
     margin-bottom: $quarter-line;
 }
