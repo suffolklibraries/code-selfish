@@ -22,6 +22,20 @@
 
 							<h1 class="entry-title"><?php the_title(); ?></h1>
 
+							<?php
+
+								// check if the post has a Post Thumbnail assigned to it.
+								if ( has_post_thumbnail() ) {
+									echo "<figure>";
+									the_post_thumbnail();
+									echo "<figcaption class='secondary'><p>";
+									echo get_post(get_post_thumbnail_id())->post_excerpt;
+									echo "</p></figcaption>";
+									echo "</figure>";
+								}
+
+							?>
+
 						</header>
 
 					</div>
@@ -37,20 +51,6 @@
 							<section class="content-band">
 
 								<h1 class="content-band-title">Information</h1>
-
-								<?php
-
-									// check if the post has a Post Thumbnail assigned to it.
-									if ( has_post_thumbnail() ) {
-										echo "<figure>";
-										the_post_thumbnail();
-										echo "<figcaption class='header-caption'><p>";
-										echo get_post(get_post_thumbnail_id())->post_excerpt;
-										echo "</p></figcaption>";
-										echo "</figure>";
-									}
-
-								?>
 
 								<p><strong>Free wifi available</strong></p>
 
