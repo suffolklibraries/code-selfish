@@ -26,8 +26,6 @@
 
 					<h1 class="hide accessibility">Navigation</h1>
 
-					<p>All our library services.</p>
-
 					<div class="g-row">
 
 						<div class="g-w-col4 g-w-left">
