@@ -1,0 +1,43 @@
+@media screen, projection {
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border:1px solid $midgrey;
+}
+
+table caption {
+    color: $dark;
+    font: italic $size-3/1 $main-font;
+    padding: $half-line 0;
+    text-align: center;
+}
+
+table td,
+table th {
+    border-left: 1px solid $midgrey;
+    border-width: 0 0 0 1px;
+    font-size:i inherit;
+    margin: 0;
+    overflow: visible;
+    padding: $quarter-line $half-line;
+}
+
+table td:first-child,
+table th:first-child {
+    border-left-width: 0
+}
+
+table thead {
+    background-color: $lgrey;
+    color: $dark;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+table td {
+    background-color: transparent;
+}
+
+}
