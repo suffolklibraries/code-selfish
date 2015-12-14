@@ -32,7 +32,7 @@
 
 							<section class="vbox">
 
-								<h1 class="vbox-title"><a href="#" class="icon icon-search">Search &amp; reserve</a></h1>
+								<h1 class="vbox-title"><a href="https://suffolk.spydus.co.uk" class="icon icon-search">Search &amp; reserve</a></h1>
 
 								<p class="vbox-text">Search for books, CDs &amp; DVDs and reserve for collection from your library.</p>
 
@@ -44,7 +44,7 @@
 
 							<section class="vbox">
 
-								<h1 class="vbox-title"><a href="#" class="icon icon-lock">Login &amp; renew</a></h1>
+								<h1 class="vbox-title"><a href="https://suffolk.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/LOGINB" class="icon icon-lock">Login &amp; renew</a></h1>
 
 								<p class="vbox-text">See your loans &amp; fines, renew titles and update your details.</p>
 
@@ -56,7 +56,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-tablet" href="#">eLibrary</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-tablet" href="<?php echo get_site_url(); ?>/elibrary">eLibrary</a></h1>
 
 		                        <p class="vbox-text">Free eBooks, eAudio, downloads, magazines &amp; streaming.</p>
 
@@ -72,7 +72,7 @@
 
 		                    <section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-map" href="#">Branches</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-map" href="<?php echo get_site_url(); ?>/branches">Branches</a></h1>
 
 		                        <p class="vbox-text">Branch contact details and Ipswich Enterprise + Innovation hub.</p>
 
@@ -84,7 +84,7 @@
 
 		                    <section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-info" href="#">Help using the service</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-info" href="<?php echo get_site_url(); ?>/help">Help using the service</a></h1>
 
 		                        <p class="vbox-text">Guides to using the library services, costs &amp; what you can borrow.</p>
 
@@ -112,7 +112,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-library" href="#">Information resources</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-library" href="<?php echo get_site_url(); ?>/information-resources">Information resources</a></h1>
 
 		                        <p class="vbox-text">Free access to Ancestry, Find My Past, Access to Research and many other resources.</p>
 
@@ -124,7 +124,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-calendar" href="#">Events &amp; activities</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-calendar" href="<?php echo get_site_url(); ?>/events-activities">Events &amp; activities</a></h1>
 
 		                        <p class="vbox-text">Special events and regular activities for children &amp; older people. Free computer training.</p>
 
@@ -136,7 +136,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-bus" href="#">Schools, mobiles, home</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-bus" href="<?php echo get_site_url(); ?>/community-services">Schools, mobiles, home</a></h1>
 
 		                        <p class="vbox-text">Mobile libraries, home library service &amp; Literacy, Books and Reading Team for Schools.</p>
 
@@ -152,7 +152,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-book" href="#">Reading</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-book" href="<?php echo get_site_url(); ?>/reading-lists-groups-advice">Reading</a></h1>
 
 		                        <p class="vbox-text">New in, suggestions, lists, groups and advice for children. Info on dyslexia and Irlens.</p>
 
@@ -164,7 +164,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-pen" href="#">News &amp; blog</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-pen" href="<?php echo get_site_url(); ?>/news">News &amp; blog</a></h1>
 
 		                        <p class="vbox-text">Announcements, press releases and our behind the scenes blog.</p>
 
@@ -176,7 +176,7 @@
 
 							<section class="vbox">
 
-		                        <h1 class="vbox-title"><a class="icon icon-people" href="#">About us</a></h1>
+		                        <h1 class="vbox-title"><a class="icon icon-people" href="<?php echo get_site_url(); ?>/about">About us</a></h1>
 
 		                        <p class="vbox-text">Governance, board members, jobs and documents.</p>
 

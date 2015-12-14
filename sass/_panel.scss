@@ -4,8 +4,22 @@
     background-color: $lgrey;
     padding: $half-line $line-and-a-half;
     margin-top: $half-line;
+    border: 1px solid $midgrey;
 }
 
+.panel:before,
+.panel:after {
+    content: "";
+    display: block;
+}
+
+.panel:after {
+    clear: both;
+}
+
+.panel {
+    zoom: 1;
+}
 
 
 }
