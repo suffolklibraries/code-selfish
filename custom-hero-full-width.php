@@ -31,7 +31,7 @@
 
 								<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 
-							</div>
+							</header>
 
 							<div class="entry-content full-width-content full-width-content-<?php global $post; echo $post->post_name; ?>">
 

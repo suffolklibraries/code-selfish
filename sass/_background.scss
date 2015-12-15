@@ -1,48 +1,64 @@
 @media screen, projection {
 
-    .bg {
+.bg {
 
-        @media #{$nbp} {
-            padding: $single-line $double-line;
-        }
-
+    @media #{$nbp} {
+        padding: $single-line $double-line;
     }
 
-    .bg-white {
-        background-color: $light;
-    }
+    overflow: hidden;
 
-    .bg-grey {
-        background-color: $grey;
-    }
+}
 
-    .bg-lgrey {
-        background-color: $lgrey;
-    }
+.bg:before,
+.bg:after {
+    content: "";
+    display: block;
+}
 
-    .bg-midgrey {
-        background-color: $midgrey;
-    }
+.bg:after {
+    clear: both;
+}
 
-    .bg-text {
-        background-color: $dark;
-    }
+.bg {
+    zoom: 1;
+}
 
-    .bg-corporate {
-        background-color: $corporate;
-    }
+.bg-white {
+    background-color: $light;
+}
 
-    .bg-secondary-blue {
-        background-color: $secondary-blue;
-    }
+.bg-grey {
+    background-color: $grey;
+}
 
-    .bg-dark {
-        color: $light;
-    }
+.bg-lgrey {
+    background-color: $lgrey;
+}
 
-    .bg-dark a {
-        color: $light;
-    }
+.bg-midgrey {
+    background-color: $midgrey;
+}
+
+.bg-text {
+    background-color: $dark;
+}
+
+.bg-corporate {
+    background-color: $corporate;
+}
+
+.bg-secondary-blue {
+    background-color: $secondary-blue;
+}
+
+.bg-dark {
+    color: $light;
+}
+
+.bg-dark a {
+    color: $light;
+}
 
 
 
