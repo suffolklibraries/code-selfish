@@ -196,7 +196,7 @@
 
 			<?php if ( $the_query->have_posts() ) : ?>
 
-				<section class="content-band reversed clearfix" id="hot-picks">
+				<section class="content-band bg-lgrey clearfix" id="hot-picks">
 
 					<div class="wrapper">
 
@@ -242,7 +242,7 @@
 
 		<?php wp_reset_postdata(); ?>
 
-		<section class="content-band clearfix reversed-light" id="recommend">
+		<section class="content-band clearfix bg-light" id="recommend">
 
 			<div class="wrapper">
 
@@ -504,7 +504,7 @@
 
 		</section>
 
-		<section class="reversed content-band clearfix" id="radio">
+		<section class="bg-lgrey content-band clearfix" id="radio">
 
 			<div class="wrapper">
 

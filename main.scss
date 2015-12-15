@@ -51,7 +51,8 @@ $active: #02CAF7;
 $hover: #02CAF7;
 $code: #FCDF02;
 $background: #F7F7F7;
-$corporate: #642D91;
+$corporate: #3B1B53;
+$secondary-blue: #0E82C0;
 
 
 // Import partials
@@ -79,4 +80,5 @@ $corporate: #642D91;
 "sass/panel",
 "sass/hub",
 "sass/table",
-"sass/background"
+"sass/background",
+"sass/wp-navigation"

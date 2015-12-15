@@ -1,4 +1,4 @@
-		<footer id="footer" class="site-footer" >
+		<footer id="footer" class="site-footer bg bg-dark bg-text">
 
 			<div class="wrapper">
 

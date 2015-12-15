@@ -68,16 +68,16 @@ function cs_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Sidebar',
 		'id'            => 'sidebar',
-		'before_widget' => '<section class="vbox">',
+		'before_widget' => '<section class="nib-box bg bg-white">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="vbox-title">',
+		'before_title'  => '<h1 class="nib-box-title">',
 		'after_title'   => '</h1>',
 	) );
 
     register_sidebar( array(
 		'name'          => 'Footer area 1',
 		'id'            => 'footer_area_one',
-		'before_widget' => '<section class="nib-box">',
+		'before_widget' => '<section class="nib-box>',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h1 class="nib-box-title">',
 		'after_title'   => '</h1>',
