@@ -13,7 +13,7 @@ body {
     line-height: $base-line-height;
     max-width: $max-width;
     margin: 0 auto;
-    background-color: $light;
+    background-color: $lgrey;
     font-size: $base-font-size;
 
     @media #{$nbp} {

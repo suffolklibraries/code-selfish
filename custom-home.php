@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-	<main id="content" class="clearfix" role="main">
+	<main id="content" class="clearfix bg-white" role="main">
 
 		<?php while (have_posts()) : the_post(); ?>
 

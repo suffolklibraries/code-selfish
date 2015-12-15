@@ -1,0 +1,15 @@
+@media screen, projection {
+
+    .bg {
+
+        @media #{$nbp} {
+            padding: $single-line $double-line;
+        }
+        
+    }
+
+    .bg-white {
+        background-color: $light;
+    }
+
+}
