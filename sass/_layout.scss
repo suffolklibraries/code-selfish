@@ -7,6 +7,10 @@
         max-width: $wrapper-width;
     }
 
+    @media #{$nbp} {
+        min-width: $min-wrapper-width;
+    }
+
     margin: 0 auto;
 }
 
