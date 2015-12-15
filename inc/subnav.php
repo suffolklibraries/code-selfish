@@ -3,10 +3,8 @@
 // If conditions are matched it'll display a submenu
 ?>
 
-<?php if ( is_page( 'presents' ) ) { ?>
- <p>Sometihneobfqkwufbkw    qedfb</p>
-<?php } ?>
+<?php if ( is_page( array( 'presents', 'about-suffolk-libraries-presents' ) ) ) { ?>
 
-<?php if ( is_page( 'hub' ) ) { ?>
- <p>This is the hub.</p>
+    <?php wp_nav_menu( array( 'theme_location' => 'presents-menu', 'container' => false, 'menu_class' => 'bg bg-text bg-dark inline-nav text-center sub-nav' ) ); ?>
+
 <?php } ?>
