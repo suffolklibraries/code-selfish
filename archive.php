@@ -14,6 +14,8 @@
 
 							<header class="entry-header">
 
+								<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
+
 								<?php
 
 									the_archive_title( '<h1 class="entry-title">', '</h1>' );

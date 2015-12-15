@@ -8,11 +8,13 @@
 
 				<article class="bg bg-white entry">
 
-					<div class="entry-header">
+					<header class="entry-header">
+
+						<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
 						<h1 class="entry-title">Your search for &#8220;<?php echo get_search_query(); ?>&#8221;</h2>
 
-					</div>
+					</header>
 
 					<div class="entry-content"><p>Looking for a particular book, film or song(s) to borrow? Search:</p>
 

@@ -105,4 +105,15 @@ function cs_widgets_init() {
 
 add_action( 'widgets_init', 'cs_widgets_init' );
 
+
+// Disable breadcrumb plugin
+
+add_action( 'after_setup_theme', 'bct_theme_setup' );
+
+function bct_theme_setup() {
+
+    add_theme_support( 'breadcrumb-trail' );
+    
+}
+
 ?>

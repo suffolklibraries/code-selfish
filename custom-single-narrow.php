@@ -12,11 +12,13 @@
 
 						<article class="entry bg bg-white single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">
 
-							<div class="entry-header single-narrow-header single-narrow-header-<?php global $post; echo $post->post_name; ?>">
+							<header class="entry-header single-narrow-header single-narrow-header-<?php global $post; echo $post->post_name; ?>">
+
+								<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
 								<h1 class="entry-title single-narrow-title single-narrow-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 
-							</div>
+							</header>
 
 							<div class="entry-content single-narrow-content single-narrow-content-<?php global $post; echo $post->post_name; ?>">
 

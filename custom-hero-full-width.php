@@ -25,7 +25,9 @@
 
 						<article class="entry bg bg-white full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
 
-							<div class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
+							<header class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
+
+								<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
 								<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 

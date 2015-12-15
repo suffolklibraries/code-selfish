@@ -1,0 +1,28 @@
+@media screen, projection {
+
+.trail-items {
+    font-size: $size-3;
+    margin-bottom: $line-and-a-half;
+    padding: $half-line;
+    background-color: $lgrey;
+}
+
+.trail-item {
+    list-style-type: none;
+    display: inline;
+}
+
+.trail-end {
+    font-weight: bold;
+}
+
+.trail-item:after {
+    content: ' → ';
+}
+
+.trail-end:after {
+    content: '';
+}
+
+
+}

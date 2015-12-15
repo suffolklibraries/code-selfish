@@ -12,11 +12,13 @@
 
 					<article class="entry bg bg-white">
 
-						<div class="entry-header">
+						<header class="entry-header">
+
+							<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
 							<h1 class="entry-title"><?php the_title(); ?>
 
-						</div>
+						</header>
 
 						<div class="entry-content">
 
