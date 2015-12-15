@@ -2,51 +2,52 @@
 
 <?php get_header(); ?>
 
-		<main id="content" role="main">
+	<main id="content" role="main">
 
-			<?php while (have_posts()) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 
-            <?php if ( has_post_thumbnail() ) {?>
+	    <?php if ( has_post_thumbnail() ) {?>
 
-                <figure class="hero-splash hero-splash-full-width hero-splash-<?php global $post; echo $post->post_name; ?>">
+	        <figure class="hero-splash hero-splash-full-width hero-splash-<?php global $post; echo $post->post_name; ?>">
 
-                    <?php the_post_thumbnail(); ?>
+	            <?php the_post_thumbnail(); ?>
 
-                    <figcaption class="hero-splash-text hero-splash-full-width-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
+	            <figcaption class="hero-splash-text hero-splash-full-width-text hero-splash-text-<?php global $post; echo $post->post_name; ?>"><?php if ( has_excerpt() ) {?><?php the_excerpt(); ?><?php } ?></figcaption>
 
-                </figure>
+	        </figure>
 
-            <?php } ?>
+	    <?php } ?>
 
+			<div class="wrapper">
 
-				<div class="wrapper">
+				<?php get_template_part('inc/subnav'); ?>
 
-					<div class="g-row clearfix">
+				<div class="g-row clearfix">
 
-						<article class="entry bg bg-white full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
+					<article class="entry bg bg-white full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
 
-							<header class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
+						<header class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
 
-								<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
+							<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-								<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
+							<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
 
-							</header>
+						</header>
 
-							<div class="entry-content full-width-content full-width-content-<?php global $post; echo $post->post_name; ?>">
+						<div class="entry-content full-width-content full-width-content-<?php global $post; echo $post->post_name; ?>">
 
-								<?php the_content(); ?>
+							<?php the_content(); ?>
 
-							</div>
+						</div>
 
-						</article>
+					</article>
 
-					</div> <!-- end .g-row -->
+				</div> <!-- end .g-row -->
 
-				</div> <!-- end .wrapper -->
+			</div> <!-- end .wrapper -->
 
-			<?php endwhile; ?>
+		<?php endwhile; ?>
 
-		</main>
+	</main>
 
 <?php get_footer(); ?>

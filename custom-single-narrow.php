@@ -8,6 +8,8 @@
 
 				<div class="inner-wrapper">
 
+					<?php get_template_part('inc/subnav'); ?>
+
 					<div class="g-row clearfix">
 
 						<article class="entry bg bg-white single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">

@@ -4,5 +4,9 @@
 ?>
 
 <?php if ( is_page( 'presents' ) ) { ?>
+ <p>Sometihneobfqkwufbkw    qedfb</p>
+<?php } ?>
 
+<?php if ( is_page( 'hub' ) ) { ?>
+ <p>This is the hub.</p>
 <?php } ?>
