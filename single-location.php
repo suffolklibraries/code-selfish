@@ -4,7 +4,7 @@
 
 		<div class="wrapper">
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<article <?php post_class( 'bg bg-white') ?> id="post-<?php the_ID(); ?>">
 
 				<div class="g-row">
 

@@ -10,7 +10,7 @@
 
 					<div class="g-row clearfix">
 
-						<article class="entry single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">
+						<article class="entry bg bg-white single-narrow-entry single-narrow-entry-<?php global $post; echo $post->post_name; ?>">
 
 							<div class="entry-header single-narrow-header single-narrow-header-<?php global $post; echo $post->post_name; ?>">
 

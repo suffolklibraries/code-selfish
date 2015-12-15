@@ -6,7 +6,7 @@
 
 			<main id="content">
 
-				<article class="entry">
+				<article class="bg bg-white entry">
 
 					<div class="entry-header">
 

@@ -1,6 +1,6 @@
 		<div class="g-w-col4 g-w-left">
 
-			<aside id="secondary" class="secondary">
+			<aside id="secondary" class="secondary bg bg-white">
 
 				<?php if ( is_active_sidebar( 'sidebar' ) ) : ?>
 

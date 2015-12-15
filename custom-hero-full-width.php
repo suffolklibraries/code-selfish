@@ -23,7 +23,7 @@
 
 					<div class="g-row clearfix">
 
-						<article class="entry full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
+						<article class="entry bg bg-white full-width-entry full-width-entry-<?php global $post; echo $post->post_name; ?>">
 
 							<div class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
 

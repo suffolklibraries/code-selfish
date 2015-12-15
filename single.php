@@ -10,7 +10,7 @@
 
 				<main id="content">
 
-					<article class="entry">
+					<article class="entry bg bg-white">
 
 						<div class="entry-header">
 
