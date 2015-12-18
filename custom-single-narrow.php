@@ -8,7 +8,11 @@
 
 				<div class="inner-wrapper">
 
-					<?php get_template_part('inc/subnav'); ?>
+					<?php if ( is_active_sidebar( 'subnav-menu' ) ) : ?>
+
+						<?php dynamic_sidebar( 'subnav-menu' ); ?>
+
+					<?php endif; ?>
 
 					<div class="g-row clearfix">
 

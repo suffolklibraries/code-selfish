@@ -27,26 +27,6 @@ function cs_add_excerpts_to_pages() {
 add_action('init', 'cs_add_excerpts_to_pages');
 
 
-// Navigation menus
-function register_cs_menus() {
-
-  register_nav_menus(
-    array(
-        'tools-menu' => __( 'Tools menu' ),
-        'footer-menu' => __( 'Footer menu' ),
-        'bookfest-menu' => __( 'Bookfest Menu' ),
-        'hub-menu' => __( 'Hub Menu' ),
-        'schools-menu' => __( 'Schools Menu' ),
-        'presents-menu' => __( 'Suffolk Presents Menu' ),
-        'literacy-menu' => __('Literacy Menu'),
-    )
-  );
-
-}
-
-add_action( 'init', 'register_cs_menus' );
-
-
 // Add descriptions to navigation mcrypt_enc_get_supported_key_sizes
 function cs_nav_description( $item_output, $item, $depth, $args ) {
 
@@ -102,16 +82,13 @@ function cs_widgets_init() {
 	) );
 
     register_sidebar( array(
-		'name'          => 'Presents sub menu',
-		'id'            => 'presents-sub-menu',
-		'before_widget' => '<nav>',
+		'name'          => 'Subnav menu',
+		'id'            => 'subnav-menu',
+		'before_widget' => '<nav class="subnav">',
 		'after_widget'  => '</nav>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
-
-
-}
 
 add_action( 'widgets_init', 'cs_widgets_init' );
 
