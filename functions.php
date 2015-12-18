@@ -101,6 +101,16 @@ function cs_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 
+    register_sidebar( array(
+		'name'          => 'Presents sub menu',
+		'id'            => 'presents-sub-menu',
+		'before_widget' => '<nav>',
+		'after_widget'  => '</nav>',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+
 }
 
 add_action( 'widgets_init', 'cs_widgets_init' );
@@ -113,7 +123,7 @@ add_action( 'after_setup_theme', 'bct_theme_setup' );
 function bct_theme_setup() {
 
     add_theme_support( 'breadcrumb-trail' );
-    
+
 }
 
 ?>
