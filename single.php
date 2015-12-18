@@ -16,7 +16,7 @@
 
 							<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-							<h1 class="entry-title"><?php the_title(); ?>
+							<h1 class="entry-title"><?php the_title(); ?></h1>
 
 						</header>
 

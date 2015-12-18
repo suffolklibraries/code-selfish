@@ -8,9 +8,9 @@
 
 				<div class="inner-wrapper">
 
-					<?php if ( is_active_sidebar( 'subnav-menu' ) ) : ?>
+					<?php if ( is_active_sidebar( 'subnav_menu' ) ) : ?>
 
-						<?php dynamic_sidebar( 'subnav-menu' ); ?>
+						<?php dynamic_sidebar( 'subnav_menu' ); ?>
 
 					<?php endif; ?>
 
@@ -22,7 +22,7 @@
 
 								<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-								<h1 class="entry-title single-narrow-title single-narrow-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
+								<h1 class="entry-title single-narrow-title single-narrow-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?></h1>
 
 							</header>
 

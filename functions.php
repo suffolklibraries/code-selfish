@@ -83,12 +83,14 @@ function cs_widgets_init() {
 
     register_sidebar( array(
 		'name'          => 'Subnav menu',
-		'id'            => 'subnav-menu',
+		'id'            => 'subnav_menu',
 		'before_widget' => '<nav class="subnav">',
 		'after_widget'  => '</nav>',
-		'before_title'  => '',
-		'after_title'   => '',
+		'before_title'  => '<h1 class="subnav-title">',
+		'after_title'   => '</h1>',
 	) );
+
+}
 
 add_action( 'widgets_init', 'cs_widgets_init' );
 

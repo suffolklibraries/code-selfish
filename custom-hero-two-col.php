@@ -18,6 +18,12 @@
 
 	<div class="wrapper">
 
+        <?php if ( is_active_sidebar( 'subnav_menu' ) ) : ?>
+
+            <?php dynamic_sidebar( 'subnav_menu' ); ?>
+
+        <?php endif; ?>
+
 		<div class="g-row">
 
 			<div class="g-w-col8 g-w-left">
@@ -30,7 +36,7 @@
 
                             <?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-							<h1 class="entry-title"><?php the_title(); ?>
+							<h1 class="entry-title"><?php the_title(); ?></h1>
 
 						</header>
 

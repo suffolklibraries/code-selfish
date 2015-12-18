@@ -12,7 +12,7 @@
 
 						<?php if(function_exists('breadcrumb_trail')) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-						<h1 class="entry-title">Your search for &#8220;<?php echo get_search_query(); ?>&#8221;</h2>
+						<h1 class="entry-title">Your search for &#8220;<?php echo get_search_query(); ?>&#8221;</h1>
 
 					</header>
 

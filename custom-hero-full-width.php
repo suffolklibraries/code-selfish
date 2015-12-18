@@ -20,7 +20,11 @@
 
 			<div class="wrapper">
 
-				<?php get_template_part('inc/subnav'); ?>
+				<?php if ( is_active_sidebar( 'subnav_menu' ) ) : ?>
+
+					<?php dynamic_sidebar( 'subnav_menu' ); ?>
+
+				<?php endif; ?>
 
 				<div class="g-row clearfix">
 
@@ -30,7 +34,7 @@
 
 							<?php if( function_exists('breadcrumb_trail') && !is_page ('presents') ) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
-							<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?>
+							<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?></h1>
 
 						</header>
 
