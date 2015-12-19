@@ -19,7 +19,7 @@
 								<?php
 
 									the_archive_title( '<h1 class="entry-title">', '</h1>' );
-									the_archive_description( '<div class="panel clearfix"><p class="secondary">', '</p></div>' );
+									the_archive_description( '<p class="secondary">', '</p>' );
 
 								?>
 

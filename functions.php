@@ -95,7 +95,7 @@ function cs_widgets_init() {
 add_action( 'widgets_init', 'cs_widgets_init' );
 
 
-// Disable breadcrumb plugin
+// Disable breadcrumb plugin styles
 
 add_action( 'after_setup_theme', 'bct_theme_setup' );
 
@@ -104,5 +104,30 @@ function bct_theme_setup() {
     add_theme_support( 'breadcrumb-trail' );
 
 }
+
+
+// Remove prefixes from archive transliterator_create_from_rules
+
+add_filter( 'get_the_archive_title', function ($title) {
+
+    if ( is_category() ) {
+
+            $title = single_cat_title( '', false );
+
+        } elseif ( is_tag() ) {
+
+            $title = single_tag_title( '', false );
+
+        } elseif ( is_author() ) {
+
+            $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+
+        }
+
+    return $title;
+
+});
+
+
 
 ?>
