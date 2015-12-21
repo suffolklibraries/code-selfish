@@ -526,19 +526,19 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col6">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box secondary">
 
 									<h1 class="nib-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
-
-									<p>Our monthly book discussion with Radio Suffolk's Lesley Dolphin.</p>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
 									<a href="reading-lists-groups-advice/lesleys-readers"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
+
+									<p>Our monthly book discussion with Radio Suffolk's Lesley Dolphin.</p>
 
 								</section>
 
@@ -550,23 +550,19 @@
 
 					<?php wp_reset_postdata(); ?>
 
-					<div class="g-w-left g-w-col6">
+					<div class="g-w-left g-w-col3">
 
 						<section class="nib-box secondary">
 
 							<h1 class="nib-box-title"><a href="/bookedout">Booked Out</a></h1>
 
-							<p>Our monthly books podcast from the team atm Woodbridge Library.</p>
-
 			            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
+
+							<p>Our monthly books podcast from the team atm Woodbridge Library.</p>
 
 						</section>
 
 					</div>
-
-				</div> <!-- end .g-row -->
-
-				<div class="g-row">
 
 					<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
 
@@ -574,19 +570,19 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col6">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box secondary">
 
 									<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
-
-									<p>Library staff share their recommendations.</p>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
 									<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
+
+									<p>Library staff share their recommendations.</p>
 
 								</section>
 
@@ -604,19 +600,19 @@
 
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<div class="g-w-left g-w-col6">
+							<div class="g-w-left g-w-col3">
 
 								<section class="nib-box secondary">
 
 									<h1 class="nib-box-title"><a href="category/literacy">Beyond the Book</a></h1>
-
-									<p>Reviews and literacy resources for parents &amp; teachers.</p>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
 									<a href="category/literacy"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
+
+									<p>Reviews and literacy resources for parents &amp; teachers.</p>
 
 								</section>
 
