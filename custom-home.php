@@ -216,7 +216,7 @@
 
 								<div class="g-w-left g-w-col2">
 
-									<div class="nib-box secondary">
+									<div class="vbox-box secondary">
 
 										<?php if ( has_post_thumbnail() ) : ?>
 
@@ -226,7 +226,7 @@
 
 										<p><a href="<?php echo CFS()->get('catalogue_link'); ?>"><?php the_title(); ?></a></p>
 
-									</div> <!-- end .nib-box -->
+									</div> <!-- end .vbox-box -->
 
 								</div>
 
@@ -266,9 +266,9 @@
 
 						<div class="g-w-left g-w-col3">
 
-							<section class="nib-box">
+							<section class="vbox-box">
 
-								<h1 class="nib-box-title"><a href="category/book-lists">Fiction</a></h1>
+								<h1 class="vbox-box-title"><a href="category/book-lists">Fiction</a></h1>
 
 								<?php if ( has_post_thumbnail() ) : ?>
 
@@ -276,7 +276,7 @@
 
 								<?php endif; ?>
 
-							</section> <!-- end .nib-box -->
+							</section> <!-- end .vbox-box -->
 
 						</div>
 
@@ -294,9 +294,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/film-lists">Films &amp; DVDs</a></h1>
+									<h1 class="vbox-box-title"><a href="category/film-lists">Films &amp; DVDs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -304,7 +304,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -324,9 +324,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/childrens-book-lists">Children &amp; YAs</a></h1>
+									<h1 class="vbox-box-title"><a href="category/childrens-book-lists">Children &amp; YAs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -334,7 +334,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -354,9 +354,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/non-fiction-lists">Non-fiction</a></h1>
+									<h1 class="vbox-box-title"><a href="category/non-fiction-lists">Non-fiction</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -364,7 +364,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -388,9 +388,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/music-lists">Music</a></h1>
+									<h1 class="vbox-box-title"><a href="category/music-lists">Music</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -398,7 +398,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -418,9 +418,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/mental-health-lists">Mental health</a></h1>
+									<h1 class="vbox-box-title"><a href="category/mental-health-lists">Mental health</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -428,7 +428,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -448,9 +448,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/local-interest">Local interest</a></h1>
+									<h1 class="vbox-box-title"><a href="category/local-interest">Local interest</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -458,7 +458,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -478,9 +478,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box">
+								<section class="vbox-box">
 
-									<h1 class="nib-box-title"><a href="category/book-club-lists">For book clubs</a></h1>
+									<h1 class="vbox-box-title"><a href="category/book-club-lists">For book clubs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -488,7 +488,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .nib-box -->
+								</section> <!-- end .vbox-box -->
 
 							</div>
 
@@ -528,9 +528,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box secondary">
+								<section class="vbox-box secondary">
 
-									<h1 class="nib-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
+									<h1 class="vbox-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -552,9 +552,9 @@
 
 					<div class="g-w-left g-w-col3">
 
-						<section class="nib-box secondary">
+						<section class="vbox-box secondary">
 
-							<h1 class="nib-box-title"><a href="/bookedout">Booked Out</a></h1>
+							<h1 class="vbox-box-title"><a href="/bookedout">Booked Out</a></h1>
 
 			            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
 
@@ -572,9 +572,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box secondary">
+								<section class="vbox-box secondary">
 
-									<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
+									<h1 class="vbox-box-title"><a href="category/staff-picks">Staff picks</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -602,9 +602,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="nib-box secondary">
+								<section class="vbox-box secondary">
 
-									<h1 class="nib-box-title"><a href="category/literacy">Beyond the Book</a></h1>
+									<h1 class="vbox-box-title"><a href="category/literacy">Beyond the Book</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
