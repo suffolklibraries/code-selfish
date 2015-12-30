@@ -1,10 +1,22 @@
 @media screen, projection {
 
 .sub-nav {
-    text-transform: lowercase;
-    font-variant: small-caps;
-    font-weight: bold;
-    border-bottom: 1px solid $lgrey;
+    margin: -2px 0 -1px 0;
+    padding: $quarter-line 0;
+}
+
+.sub-nav li {
+    display: inline;
+}
+
+.sub-nav li a {
+    float: left;
+    padding: $half-line;
+}
+
+.sub-nav li.current_page_item a,
+.sub-nav li a:hover {
+    background-color: $light;
 }
 
 }
