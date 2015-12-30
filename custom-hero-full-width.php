@@ -32,7 +32,7 @@
 
 						<header class="entry-header full-width-header full-width-header-<?php global $post; echo $post->post_name; ?>">
 
-							<?php if( function_exists('breadcrumb_trail') && !is_page ('presents') ) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
+							<?php if( function_exists('breadcrumb_trail') ) { breadcrumb_trail(array('separator' => ' &rarr; ', 'show_browse' => 'false')); } ?>
 
 							<h1 class="entry-title full-width-title full-width-title-<?php global $post; echo $post->post_name; ?>"><?php the_title(); ?></h1>
 
