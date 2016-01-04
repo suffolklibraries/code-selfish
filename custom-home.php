@@ -594,7 +594,7 @@
 
 					<?php wp_reset_postdata(); ?>
 
-					<?php $the_query = new WP_Query( 'category_name=literacy&posts_per_page=1' ); ?>
+					<?php $the_query = new WP_Query( 'category_name=beyond-the-book&posts_per_page=1' ); ?>
 
 					<?php if ( $the_query->have_posts() ) : ?>
 
@@ -604,11 +604,11 @@
 
 								<section class="vbox-box secondary">
 
-									<h1 class="vbox-box-title"><a href="category/literacy">Beyond the Book</a></h1>
+									<h1 class="vbox-box-title"><a href="category/beyond-the-book">Beyond the Book</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
-									<a href="category/literacy"><?php the_post_thumbnail(); ?></a>
+									<a href="category/beyond-the-book"><?php the_post_thumbnail(); ?></a>
 
 									<?php endif; ?>
 

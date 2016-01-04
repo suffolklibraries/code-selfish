@@ -8,6 +8,12 @@
 
 				<div class="g-w-left g-w-col8">
 
+					<?php if ( is_active_sidebar( 'subnav_menu' ) ) : ?>
+
+						<?php dynamic_sidebar( 'subnav_menu' ); ?>
+
+					<?php endif; ?>
+
 					<main id="content">
 
 						<article class="entry bg bg-white">

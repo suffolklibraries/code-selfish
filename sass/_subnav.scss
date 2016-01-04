@@ -16,7 +16,12 @@
 
 .sub-nav {
     margin: -2px 0 -7px 0;
-    padding: $quarter-line 0;
+    padding: $quarter-line 0 $three-quarter-line 0;
+
+    @media #{$nbp} {
+        padding: $quarter-line 0;
+    }
+
 }
 
 .sub-nav li {
@@ -24,14 +29,25 @@
     font-size: $size-3;
     text-transform: lowercase;
     font-variant: small-caps;
+    margin-right: $three-quarter-line;
+
+    @media #{$nbp} {
+        margin-right: 0;
+    }
+
 }
 
 .sub-nav li a {
-    float: left;
-    padding: $half-line;
+
+    @media #{$nbp} {
+        float: left;
+        padding: $half-line;
+    }
+
 }
 
 .sub-nav li.current_page_item a,
+.sub-nav li.current-menu-item a,
 .sub-nav li a:hover {
     background-color: $light;
     color: $dark;
