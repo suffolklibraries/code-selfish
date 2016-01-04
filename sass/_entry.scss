@@ -17,6 +17,17 @@
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
+    zoom: 1;
+}
+
+.entry-content:before,
+.clearfix:after {
+    content: "";
+    display: block;
+}
+
+.entry-content:after {
+    clear: both;
 }
 
 .entry blockquote {

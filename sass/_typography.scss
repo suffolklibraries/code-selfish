@@ -73,4 +73,22 @@
     margin: 0 auto;
 }
 
+.alignleft {
+
+    @media #{$bp} {
+        float: left;
+        margin-right: $single-line;
+    }
+
+}
+
+.alignright {
+
+    @media #{$bp} {
+        float: left;
+        margin-right: $single-line;
+    }
+    
+}
+
 }
