@@ -78,6 +78,7 @@
     @media #{$bp} {
         float: left;
         margin-right: $single-line;
+        margin-bottom: $half-line;
     }
 
 }
@@ -87,8 +88,9 @@
     @media #{$bp} {
         float: left;
         margin-right: $single-line;
+        margin-bottom: $half-line;
     }
-    
+
 }
 
 }
