@@ -242,7 +242,7 @@
 
 		<?php wp_reset_postdata(); ?>
 
-		<section class="content-band clearfix bg-light" id="recommend">
+		<section class="content-band clearfix bg-light secondary" id="recommend">
 
 			<div class="wrapper">
 
@@ -504,7 +504,7 @@
 
 		</section>
 
-		<section class="bg-lgrey content-band clearfix" id="radio">
+		<section class="bg-lgrey content-band clearfix secondary" id="radio">
 
 			<div class="wrapper">
 
@@ -528,7 +528,7 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box secondary">
+								<section class="vbox-box">
 
 									<h1 class="vbox-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
 
@@ -552,7 +552,7 @@
 
 					<div class="g-w-left g-w-col3">
 
-						<section class="vbox-box secondary">
+						<section class="vbox-box">
 
 							<h1 class="vbox-box-title"><a href="/bookedout">Booked Out</a></h1>
 
@@ -572,7 +572,7 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box secondary">
+								<section class="vbox-box">
 
 									<h1 class="vbox-box-title"><a href="category/staff-picks">Staff picks</a></h1>
 
@@ -602,7 +602,7 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box secondary">
+								<section class="vbox-box">
 
 									<h1 class="vbox-box-title"><a href="category/beyond-the-book">Beyond the Book</a></h1>
 
