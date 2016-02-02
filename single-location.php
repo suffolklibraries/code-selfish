@@ -68,7 +68,7 @@
 
 			</article>
 
-		</div>
+		</div>  <!-- end .wrapper -->
 
 	<?php endwhile; // End the loop ?>
 
