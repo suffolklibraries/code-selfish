@@ -4,7 +4,7 @@
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="inner-wrapper">
+			<div class="inner-inner-wrapper">
 
 				<article <?php post_class( 'bg bg-white') ?> id="post-<?php the_ID(); ?>">
 

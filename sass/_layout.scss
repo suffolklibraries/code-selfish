@@ -24,6 +24,16 @@
     padding: 0 $half-line;
 }
 
+.inner-inner-wrapper {
+
+    @media #{$bp} {
+        max-width: $inner-inner-wrapper-width;
+    }
+
+    margin: 0 auto;
+    padding: 0 $half-line;
+}
+
 #content {
     margin-bottom: $single-line;
 }
