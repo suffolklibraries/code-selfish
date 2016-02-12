@@ -196,7 +196,7 @@
 
 			<?php if ( $the_query->have_posts() ) : ?>
 
-				<section class="content-band bg-lgrey clearfix" id="hot-picks">
+				<section class="content-band bg-lgrey clearfix secondary" id="hot-picks">
 
 					<div class="wrapper">
 
@@ -210,13 +210,13 @@
 
 						</div> <!-- end .g-row -->
 
-						<div class="g-row">
+						<div class="g-row content-band">
 
 							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 								<div class="g-w-left g-w-col2">
 
-									<div class="vbox-box secondary">
+									<div class="nib-box">
 
 										<?php if ( has_post_thumbnail() ) : ?>
 
@@ -250,13 +250,13 @@
 
 					<div class="g-w-col112 g-w-left">
 
-					<h1 class="content-band-title">New in and recommendations</h1>
+						<h1 class="content-band-title">New in and recommendations</h1>
 
 					</div>
 
 				</div> <!-- end .g-row -->
 
-				<div class="g-row">
+				<div class="g-row content-band">
 
 					<?php $the_query = new WP_Query( 'category_name=book-lists&posts_per_page=1' ); ?>
 
@@ -266,9 +266,9 @@
 
 						<div class="g-w-left g-w-col3">
 
-							<section class="vbox-box">
+							<section class="nib-box">
 
-								<h1 class="vbox-box-title"><a href="category/book-lists">Fiction</a></h1>
+								<h1 class="nib-box-title"><a href="category/book-lists">Fiction</a></h1>
 
 								<?php if ( has_post_thumbnail() ) : ?>
 
@@ -276,7 +276,7 @@
 
 								<?php endif; ?>
 
-							</section> <!-- end .vbox-box -->
+							</section> <!-- end .nib-box -->
 
 						</div>
 
@@ -294,9 +294,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/film-lists">Films &amp; DVDs</a></h1>
+									<h1 class="nib-box-title"><a href="category/film-lists">Films &amp; DVDs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -324,9 +324,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/childrens-book-lists">Children &amp; YAs</a></h1>
+									<h1 class="nib-box-title"><a href="category/childrens-book-lists">Children &amp; YAs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -334,7 +334,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .vbox-box -->
+								</section> <!-- end .nib-box -->
 
 							</div>
 
@@ -354,9 +354,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/non-fiction-lists">Non-fiction</a></h1>
+									<h1 class="nib-box-title"><a href="category/non-fiction-lists">Non-fiction</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -376,7 +376,7 @@
 
 				</div> <!-- end .g-row -->
 
-				<div class="g-row">
+				<div class="g-row content-band">
 
 					<!-- Music -->
 
@@ -388,9 +388,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/music-lists">Music</a></h1>
+									<h1 class="nib-box-title"><a href="category/music-lists">Music</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -418,9 +418,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/mental-health-lists">Mental health</a></h1>
+									<h1 class="nib-box-title"><a href="category/mental-health-lists">Mental health</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -428,7 +428,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .vbox-box -->
+								</section> <!-- end .nib-box -->
 
 							</div>
 
@@ -450,7 +450,7 @@
 
 								<section class="vbox-box">
 
-									<h1 class="vbox-box-title"><a href="category/local-interest">Local interest</a></h1>
+									<h1 class="nib-box-title"><a href="category/local-interest">Local interest</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -458,7 +458,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .vbox-box -->
+								</section> <!-- end .nib-box -->
 
 							</div>
 
@@ -478,9 +478,9 @@
 
 							<div class="g-w-left g-w-col3">
 
-								<section class="vbox-box">
+								<section class="nib-box">
 
-									<h1 class="vbox-box-title"><a href="category/book-club-lists">For book clubs</a></h1>
+									<h1 class="nib-box-title"><a href="category/book-club-lists">For book clubs</a></h1>
 
 									<?php if ( has_post_thumbnail() ) : ?>
 
@@ -488,7 +488,7 @@
 
 									<?php endif; ?>
 
-								</section> <!-- end .vbox-box -->
+								</section> <!-- end .nib-box -->
 
 							</div>
 
@@ -501,132 +501,110 @@
 				</div> <!-- end .g-row -->
 
 			</div> <!-- end .wrapper -->
-
-		</section>
-
-		<section class="bg-lgrey content-band clearfix secondary" id="radio">
 
 			<div class="wrapper">
 
-				<div class="g-row">
+					<div class="g-row content-band">
 
-					<div class="g-w-left g-w-col12">
+						<div class="g-w-left g-w-col3">
 
-						<h1 class="content-band-title">From our staff</h1>
+							<section class="nib-box">
 
-					</div>
+								<h1 class="nib-box-title"><a href="/bookedout">Booked Out</a></h1>
 
-				</div> <!-- end .g-row -->
+				            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
 
-				<div class="g-row">
+							</section>
 
-					<?php $the_query = new WP_Query( 'page_id=3443&posts_per_page=1' ); ?>
+						</div>
 
-					<?php if ( $the_query->have_posts() ) : ?>
+						<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
 
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<?php if ( $the_query->have_posts() ) : ?>
 
-							<div class="g-w-left g-w-col3">
+							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-								<section class="vbox-box">
+								<div class="g-w-left g-w-col3">
 
-									<h1 class="vbox-box-title"><a href="reading-lists-groups-advice/lesleys-readers"><?php the_title(); ?></a></h1>
+									<section class="nib-box">
 
-									<?php if ( has_post_thumbnail() ) : ?>
+										<h1 class="nib-box-title"><a href="category/staff-picks">Staff picks</a></h1>
 
-									<a href="reading-lists-groups-advice/lesleys-readers"><?php the_post_thumbnail(); ?></a>
+										<?php if ( has_post_thumbnail() ) : ?>
 
-									<?php endif; ?>
+										<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
 
-									<p>Our monthly book discussion with Radio Suffolk's Lesley Dolphin.</p>
+										<?php endif; ?>
 
-								</section>
+									</section>
 
-							</div>
+								</div>
 
-						<?php endwhile; ?>
+							<?php endwhile; ?>
 
-					<?php endif; ?>
+						<?php endif; ?>
 
-					<?php wp_reset_postdata(); ?>
+						<?php wp_reset_postdata(); ?>
 
-					<div class="g-w-left g-w-col3">
+						<?php $the_query = new WP_Query( 'category_name=beyond-the-book&posts_per_page=1' ); ?>
 
-						<section class="vbox-box">
+						<?php if ( $the_query->have_posts() ) : ?>
 
-							<h1 class="vbox-box-title"><a href="/bookedout">Booked Out</a></h1>
+							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			            	<a href="/bookedout"><img alt="The Booked Out team" src="wp-content/uploads/2015/11/bookedout.jpg"></a>
+								<div class="g-w-left g-w-col3">
 
-							<p>Our monthly books podcast from the team atm Woodbridge Library.</p>
+									<section class="nib-box">
 
-						</section>
+										<h1 class="nib-box-title"><a href="category/beyond-the-book">Literacy resources</a></h1>
 
-					</div>
+										<?php if ( has_post_thumbnail() ) : ?>
 
-					<?php $the_query = new WP_Query( 'category_name=staff-picks&posts_per_page=1' ); ?>
+										<a href="category/beyond-the-book"><?php the_post_thumbnail(); ?></a>
 
-					<?php if ( $the_query->have_posts() ) : ?>
+										<?php endif; ?>
 
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+									</section>
 
-							<div class="g-w-left g-w-col3">
+								</div>
 
-								<section class="vbox-box">
+							<?php endwhile; ?>
 
-									<h1 class="vbox-box-title"><a href="category/staff-picks">Staff picks</a></h1>
+						<?php endif; ?>
 
-									<?php if ( has_post_thumbnail() ) : ?>
+						<?php wp_reset_postdata(); ?>
 
-									<a href="category/staff-picks"><?php the_post_thumbnail(); ?></a>
+						<?php $the_query = new WP_Query( 'category_name=interviews&posts_per_page=1' ); ?>
 
-									<?php endif; ?>
+						<?php if ( $the_query->have_posts() ) : ?>
 
-									<p>Library staff share their recommendations.</p>
+							<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-								</section>
+								<div class="g-w-left g-w-col3">
 
-							</div>
+									<section class="nib-box">
 
-						<?php endwhile; ?>
+										<h1 class="nib-box-title"><a href="category/beyond-the-book">Author interviews</a></h1>
 
-					<?php endif; ?>
+										<?php if ( has_post_thumbnail() ) : ?>
 
-					<?php wp_reset_postdata(); ?>
+										<a href="category/beyond-the-book"><?php the_post_thumbnail(); ?></a>
 
-					<?php $the_query = new WP_Query( 'category_name=beyond-the-book&posts_per_page=1' ); ?>
+										<?php endif; ?>
 
-					<?php if ( $the_query->have_posts() ) : ?>
+									</section>
 
-						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+								</div>
 
-							<div class="g-w-left g-w-col3">
+							<?php endwhile; ?>
 
-								<section class="vbox-box">
+						<?php endif; ?>
 
-									<h1 class="vbox-box-title"><a href="category/beyond-the-book">Beyond the Book</a></h1>
+						<?php wp_reset_postdata(); ?>
 
-									<?php if ( has_post_thumbnail() ) : ?>
+					</div> <!-- end .g-row -->
 
-									<a href="category/beyond-the-book"><?php the_post_thumbnail(); ?></a>
-
-									<?php endif; ?>
-
-									<p>Reviews and literacy resources for parents &amp; teachers.</p>
-
-								</section>
-
-							</div>
-
-						<?php endwhile; ?>
-
-					<?php endif; ?>
-
-					<?php wp_reset_postdata(); ?>
-
-				</div> <!-- end .g-row -->
-
-			</div> <!-- end .wrapper -->
+				</div> <!-- end .wrapper -->
 
 		</section>
 
